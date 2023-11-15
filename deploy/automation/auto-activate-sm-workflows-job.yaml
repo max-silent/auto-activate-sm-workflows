@@ -1,0 +1,42 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: auto-activate-sm-workflows
+  namespace: ccs-systemtest
+  labels:
+    appid: ${appid}
+    version: ${version}
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 10800
+  template:
+    metadata:
+      labels:
+        name: auto-activate-sm-workflows
+        version: ${version}
+        appid: ${appid}
+      annotations:
+        sidecar.istio.io/inject: "false"
+    spec:
+      containers:
+        - name: auto-activate-sm-workflows
+          image: quay.io/ccsportal/auto-activate-sm-workflows:${version}
+          command: ["/opt/ccs/run-st.sh"]
+          env:
+          - name: POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+          - name: config-volume
+            mountPath: /configmap/data
+      volumes:
+        - name: config-volume
+          configMap:
+            name: auto-activate-sm-workflows
+      restartPolicy: Never
+      imagePullSecrets:
+        - name: quay.io
+      serviceAccount: systemtest-service-account
+      serviceAccountName: systemtest-service-account

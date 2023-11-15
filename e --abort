@@ -1,0 +1,3521 @@
+[33mcommit f446b8cd646b710392a885924956d4993cad2ed9[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: 2.221.0[m[33m, [m[1;31morigin/mainline[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmainline[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Jun 20 20:10:59 2023 +0300
+
+    [GLCP-118008] [Improvement] Add possibility to have more than one test case id per test (#254)
+    
+    * Refactored to generate report for each of several TestRail IDs per test method
+    
+    * renamed dummy variable
+
+[33mcommit c47e3cc490bb890f77d15ea26af52e68637525a9[m[33m ([m[1;33mtag: 2.220.0[m[33m)[m
+Author: roshniharikantra <105837162+roshniharikantra@users.noreply.github.com>
+Date:   Tue Jun 20 22:38:25 2023 +0530
+
+    GLCP-118101: Changed the scope from class to function (#256)
+    
+    * GLCP-118101: Changed the scope from class to function
+    
+    * GLCP-118101: Added test module in /automation/run-st.sh
+
+[33mcommit 94839b47379d71b406b9f423ca23522410bd46d5[m[33m ([m[1;33mtag: 2.219.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 19 23:11:03 2023 -0700
+
+    Update conftest.py (#258)
+
+[33mcommit a512fbd136a1dea6cbc77329fc79a4363c612ea2[m[33m ([m[1;33mtag: 2.218.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Sun Jun 18 22:39:39 2023 -0700
+
+    Update Dockerfile (#257)
+
+[33mcommit 9064c008e86e72d1376a39d2c787e4f116adb11d[m[33m ([m[1;33mtag: 2.217.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Tue Jun 13 21:46:50 2023 +0530
+
+    GLCP-45144-fix2: Add import allure in the test case file for Case ID C1220641 (#250)
+
+[33mcommit 1081e7749eed7460828bec755044be9536780d3d[m[33m ([m[1;33mtag: 2.216.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Jun 13 19:16:39 2023 +0300
+
+    [GLCP-45310] Added test to verify that unable to reclaim devices by alias (#237)
+    
+    * Added test to verify that unable to reclaim devices by alias
+    
+    * Update automation/tests/workflows/greenfield/conftest.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * added retry delays to device get requests
+    
+    * Added assertion messages
+    
+    * Fix for file structure pickup
+    
+    * linting
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit 52f9081f266cd522755c8ab96c33d1ad655fc27c[m[33m ([m[1;33mtag: 2.215.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Tue Jun 13 19:16:06 2023 +0300
+
+    GLCP-45741: TC C1220645: Move device between tenants (#202)
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Suggestion - replaced utility-method. (#191)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+    
+    * GLCP-45741: TC C1220645.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45741: Automate reassign device to other tenant.
+    
+    * GLCP-45741: Automate reassign device to other tenant.
+    
+    * GLCP-45741: Automate reassign device to other tenant.
+    
+    * GLCP-45741: Automate reassign device to other tenant.
+    
+    * GLCP-45741: Automate reassign device to other tenant.
+    
+    * GLCP-45741
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    * GLCP-45741: Added TC: C1220645
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 08a71647bf59d5483e1bedebe14eccbbe85a1c2a[m[33m ([m[1;33mtag: 2.214.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 12 20:29:29 2023 -0700
+
+    GLCP-57389: revert test cases those are failing on polaris cluster (#249)
+
+[33mcommit a1203c72e9fb66ebb73ec639dd6eaa289111b60f[m[33m ([m[1;33mtag: 2.213.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 12 18:11:40 2023 -0700
+
+    GLCP-57389: revert multiple job yaml file due to ci_merge failures (#248)
+
+[33mcommit 47c45add9b77eed5620c73af034a30fe0405a7ca[m[33m ([m[1;33mtag: 2.212.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 12 17:36:14 2023 -0700
+
+    GLCP-57389: revert multiple job yaml file due to ci_merge failures (#247)
+    
+    * GLCP-57389: revert multiple job yaml file due to ci_merge failures
+    
+    * GLCP-57389: revert multiple job yaml file due to ci_merge failures
+
+[33mcommit bda6fa0e900bb838a6596b9ea610a858c5be4071[m[33m ([m[1;33mtag: 2.211.0[m[33m)[m
+Merge: 9bbde6c dafa9de
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Mon Jun 12 17:24:02 2023 -0700
+
+    Merge pull request #246 from glcp/GLCP-116734-2
+    
+    GLCP-116734: fix unassign failure when device already unassigned
+
+[33mcommit dafa9de829c8ca7d4e2260bf0057d627a60aea84[m[33m ([m[1;31morigin/GLCP-116734-2[m[33m)[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Mon Jun 12 16:54:20 2023 -0700
+
+    GLCP-116734: fix unassign failure when device already unassigned
+
+[33mcommit 9bbde6c0930573ce692cfaba8930665ed0fc90c1[m[33m ([m[1;33mtag: 2.210.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Mon Jun 12 22:57:42 2023 +0300
+
+    Changed condition for csv header creation (#241)
+
+[33mcommit 7a37e027a192f36dc4bb3e372efd06f4ef58fb03[m[33m ([m[1;33mtag: 2.209.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 12 12:57:23 2023 -0700
+
+    Update brnf_network_existing_acct_existing_devices.py (#242)
+
+[33mcommit a8742b6d83221c528cfe3b97abd91d8a9610e929[m[33m ([m[1;33mtag: 2.208.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 12 12:57:06 2023 -0700
+
+    GLCP-57389: add pods to be deployed as indexed job to run in parallel (#243)
+    
+    * GLCP-57389: add pods to be deployed as indexed job to run in parallel
+    
+    * GLCP-57389: add pods to be deployed as indexed job to run in parallel
+
+[33mcommit 1e72f6a8e62ad0b69326f03cf39cf872862c7c7f[m[33m ([m[1;33mtag: 2.207.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Mon Jun 12 18:14:33 2023 +0300
+
+    [GLCP-45150] add tag to list of devices (#236)
+    
+    * init commit
+    
+    * Added network device to the test
+    Added description and assertion messages
+    Formatting
+    
+    * Fixed failed test
+    
+    * added argument hint to docstring
+    
+    * Update automation/local_libs/activate_devices/manufacture_order_utils.py
+
+[33mcommit 0974b6ec036ab4b28244cce655197df3e7d69f19[m[33m ([m[1;33mtag: 2.206.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Mon Jun 12 20:42:37 2023 +0530
+
+    GLCP-45144-fix: fix the test case C1220641 because of library changes… (#238)
+    
+    * GLCP-45144-fix: fix the test case C1220641 because of library changes where archived_only=True was converted to archive_visibility=ARCHIVED_ONLY
+    
+    * GLCP-45144-fix: add code to revert back the device to original state
+
+[33mcommit e1e90d7a27ad064ea3b16599adace36fc2653e4e[m[33m ([m[1;33mtag: 2.205.0[m[33m)[m
+Author: roshniharikantra <105837162+roshniharikantra@users.noreply.github.com>
+Date:   Fri Jun 9 21:15:23 2023 +0530
+
+    GLCP-117017: Added allure label (#235)
+
+[33mcommit 8dba06655b7b4edd163df5922fc154ecca1ce1ae[m[33m ([m[1;33mtag: 2.204.0[m[33m)[m
+Merge: 5200d51 265ae93
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Thu Jun 8 12:22:43 2023 -0700
+
+    Merge pull request #234 from glcp/GLCP-116966
+    
+    GLCP-116966: enable service, compute tests on polaris
+
+[33mcommit 265ae9370d2dd2903cc623416073c51223347146[m[33m ([m[1;31morigin/GLCP-116966[m[33m)[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Thu Jun 8 10:42:16 2023 -0700
+
+    GLCP-116966: enable service, compute tests on polaris
+
+[33mcommit 5200d518f379dff2948d761317c0ecb00e5733a4[m[33m ([m[1;33mtag: 2.203.0[m[33m)[m
+Author: dlnu130 <118542391+dlnu130@users.noreply.github.com>
+Date:   Thu Jun 8 22:28:30 2023 +0530
+
+    GLCP-56394, GLCP-44717: Controller and DHCI storage device provisioning (#158)
+    
+    * added the test case for dhci storage provision
+    
+    * added the test case for controller provision
+    
+    * change the order in testcases
+    
+    * reformatted the file
+    
+    * changed the test order
+    
+    * fixed the order of test case
+    
+    ---------
+    
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit d1d3288b0fe8af3599ba8d5374f84b3c3c4402e3[m[33m ([m[1;33mtag: 2.202.0[m[33m)[m
+Author: dlnu130 <118542391+dlnu130@users.noreply.github.com>
+Date:   Thu Jun 8 22:25:00 2023 +0530
+
+    GLCP-44718 VGW device est provisioning (#205)
+    
+    * added the vgw provision case
+    
+    * added the payload data in separate file
+    
+    * changed the class name
+    
+    * removed the x_salt and and x_hello from test data
+    
+    * added another assertion
+    
+    * added nontpm provision testcases
+    
+    * reformat the testcase and removed self
+    
+    * added the test rail id to testcases
+    
+    ---------
+    
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit a8bc41f9616b862752c198ca0d81563caad240f0[m[33m ([m[1;33mtag: 2.201.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Thu Jun 8 22:17:57 2023 +0530
+
+    GLCP-45144: Archive the assigned device from the list of devices (#168)
+    
+    * update below files\n "
+    polaris_settings.py /existing_acct_existing_devices/conftest.py network_new_device_test_helper.py conftest.py ../existing_acct_existing_devices/test_claim_vgw_device.py ../existing_acct_existing_devices/network_existing_device_test_helper.py
+    
+    * add C ID in test_claim_vgw_device
+    
+    * add test case C1220640: Claims activate:Archive the unassigned device from the list of devices
+    
+    * update as per latest lib changes
+    
+    * modify helper.pyexisting_acct_new_devices/network_new_device_test_
+    
+    * add test cases C1220641 for JIRA ticket GLCP-45144
+    
+    * GLCP-45144: remove unnecessary code from the PR for test case C1220641
+    
+    * GLCP-45144: modify the test case C1220641
+    
+    * GLCP-45144: add automation/tests/conftest.py for  the test case C1220641
+    
+    * GLCP-45144: add automation/local_libs/activate_inventory/adi_test_helper.py for test case C1220641
+    
+    * GLCP-45144: add automation/run-st.sh for test case ID C1220641
+    
+    ---------
+    
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit 1aa422c446beb1125edc9e602869f87efe48b313[m[33m ([m[1;33mtag: 2.200.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Thu Jun 8 22:03:41 2023 +0530
+
+    GlCP-45142: Claim a new VGW device using Serial and Mac (#146)
+    
+    * update below files\n "
+    polaris_settings.py /existing_acct_existing_devices/conftest.py network_new_device_test_helper.py conftest.py ../existing_acct_existing_devices/test_claim_vgw_device.py ../existing_acct_existing_devices/network_existing_device_test_helper.py
+    
+    * add C ID in test_claim_vgw_device
+    
+    * GLCP-45142: remove unnecessary code and update the test case C1220623
+    
+    * GLCP-45142: remove s3_login data variable from conftest.py
+    
+    * GLCP-45142: add entry in automation/run-st.sh
+    
+    * GLCP-45142: add adi_test_helper.py for test case ID C1220623
+
+[33mcommit 3d414677489f6a4abf8f80cebf0ea37adcedbc34[m[33m ([m[1;33mtag: 2.199.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Thu Jun 8 22:01:49 2023 +0530
+
+    GLCP-45143: Claims activate:Archive the unassigned device from the list of devices (#147)
+    
+    * update below files\n "
+    polaris_settings.py /existing_acct_existing_devices/conftest.py network_new_device_test_helper.py conftest.py ../existing_acct_existing_devices/test_claim_vgw_device.py ../existing_acct_existing_devices/network_existing_device_test_helper.py
+    
+    * add C ID in test_claim_vgw_device
+    
+    * add test case C1220640: Claims activate:Archive the unassigned device from the list of devices
+    
+    * update as per latest lib changes
+    
+    * modify helper.pyexisting_acct_new_devices/network_new_device_test_
+    
+    * GLCP-45143: remove test_claim_vgw_device.py and modify conftest.py
+    
+    * GLCP-45143: remove archive_device from the helper function instead add it in the test case itself for test case ID C1220640
+    
+    ---------
+    
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit 1e63dff939c45757e662135bf1d6c3b20d9ebf86[m[33m ([m[1;33mtag: 2.198.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Thu Jun 8 21:57:19 2023 +0530
+
+    GLCP-56425: Claims activate:Move Device to Folder for a Platform Customer (#171)
+    
+    * update below files\n "
+    polaris_settings.py /existing_acct_existing_devices/conftest.py network_new_device_test_helper.py conftest.py ../existing_acct_existing_devices/test_claim_vgw_device.py ../existing_acct_existing_devices/network_existing_device_test_helper.py
+    
+    * add C ID in test_claim_vgw_device
+    
+    * add test case C1220640: Claims activate:Archive the unassigned device from the list of devices
+    
+    * update as per latest lib changes
+    
+    * modify helper.pyexisting_acct_new_devices/network_new_device_test_
+    
+    * add test case C1220656 for JIRA ID GLCP-45147
+    
+    * add test case C1240693 for JIRA ID GLCP-45164
+    
+    * add test case C1220650 for JIRA ID GLCP-56425
+    
+    * update the test case C1220650 for JIRA ID GLCP-56425  to incorporate changes in library function provision_dev_acid
+    
+    * add conftest.py inside test folder..
+    
+    * add conftest.py under tests folder..
+    
+    * remove unnecessary test cases and modified the test case C1220650 for JIRA ID GLCP-56425
+    
+    * GLCP-56425: modified conftest.py, existing_acct_existing_devices/conftest.py, existing_acct_existing_devices/network_existing_device_test_helper.py
+    
+    * GLCP-56425: rmeove the extra helper functions
+    
+    * GLCP-56425: modify the automation/tests/workflows/brownfield/networking/existing_acct_existing_devices/conftest.py
+    
+    * add back automation/tests/workflows/brownfield/networking/existing_acct_new_devices/conftest.py
+    
+    * GLCP-56425: add entry inside automation/run-st.sh and remove s3_login variable from conftest.py
+    
+    ---------
+    
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit 1c0370d82b8495c21c0e42b368c54c1c230f517b[m[33m ([m[1;33mtag: 2.197.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Thu Jun 8 21:49:54 2023 +0530
+
+    GLCP-46199: application-instances PATCH API to update App Instance details like endpoint url (#172)
+    
+    * update below files\n "
+    polaris_settings.py /existing_acct_existing_devices/conftest.py network_new_device_test_helper.py conftest.py ../existing_acct_existing_devices/test_claim_vgw_device.py ../existing_acct_existing_devices/network_existing_device_test_helper.py
+    
+    * add C ID in test_claim_vgw_device
+    
+    * add test case C1220640: Claims activate:Archive the unassigned device from the list of devices
+    
+    * update as per latest lib changes
+    
+    * modify helper.pyexisting_acct_new_devices/network_new_device_test_
+    
+    * add test case C1220656 for JIRA ID GLCP-45147
+    
+    * add test case C1240693 for JIRA ID GLCP-45164
+    
+    * add test case C1220655 for JIRA ID GLCP-46199
+    
+    * removed adi_app_api_session fixture from outer conftest and added it inside a file conftest.py inside tests directory
+    
+    * update pyproject.toml automation/configs/local_tb_data/polaris_settings.py
+    
+    * remove network_existing_device_test_helper.py
+    
+    * GLCP-46199: remove unnecessary test file and updates the test case: C1220655
+    
+    * GLCP-46199: delete automation/tests/workflows/brownfield/networking/existing_acct_new_devices/test_claim_network_dev_MSP.py
+    
+    * GLCP-46199: remove unnecessary fixture and helper files and make entry in run-st.sh
+    
+    * GLCP-46199: remove s3_login_data which is not needed anymore
+    
+    * GLCP-46199: modify test case C1220655 as per library helper changes.
+    
+    * GLCP-46199: modify the test case C1220655
+    
+    * GLCP-46199: update as per lib changes for test case C1220655
+    
+    * GLCP-46199: changed test name and added allure
+    
+    * added to run-st
+    
+    * GLCP-46199: Add self in the method test_update_app_instance_endpoint_C1220655 of Test class TestExistingDevicesAppApi for Case ID C1220655
+    
+    * GLCP-46199: rename the method get_info_application_instance from the earlier, which was older..
+    
+    ---------
+    
+    Co-authored-by: Rajalaxmi Shetti <shetti@Rajalaxmis-MacBook-Pro.local>
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit cb913c44d3542c05145b991caa824a72434a068d[m[33m ([m[1;33mtag: 2.196.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Thu Jun 8 08:21:28 2023 -0700
+
+    GLCP-116734: fix test failure, try 5 times before fail (#233)
+
+[33mcommit 506d78530bec0fd0afda17418c86d9391d69391e[m[33m ([m[1;33mtag: 2.195.0[m[33m)[m
+Merge: 1dbe107 d5b7c6e
+Author: ritesh-hpe <130388267+ritesh-hpe@users.noreply.github.com>
+Date:   Thu Jun 8 12:37:28 2023 +0530
+
+    Merge pull request #181 from glcp/ritesh_verify_batch_claim_accounts
+    
+    GLCP-45146: claim_batch_verify_status
+
+[33mcommit b050dc721aeb335b76f259c8ffe9732e97a6d430[m[33m ([m[1;31morigin/GLCP-116734[m[33m)[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Wed Jun 7 21:57:46 2023 -0700
+
+    GLCP-116734: fix test failure, try 5 times before fail
+
+[33mcommit 1dbe107847989e4263ad3c4c69e9098c4bb51cb8[m[33m ([m[1;33mtag: 2.194.0[m[33m)[m
+Author: Nikhil Pathak <130544244+npathak-hpe@users.noreply.github.com>
+Date:   Thu Jun 8 05:35:51 2023 +0530
+
+    GLCP-45149 : ADI -C1220639- Claims activate:Unassign a device from application (#173)
+    
+    * C1220639: Claims activate: Unassign a device from application
+    
+    * Delete pyproject.toml
+    
+    remove pyproject.toml
+    
+    * fix polaris_settings.py
+    
+    * added allure and class
+    
+    * added back pyproject. Test passed on Mira and Polaris
+    
+    ---------
+    
+    Co-authored-by: Rajalaxmi Shetti <shetti@Rajalaxmis-MacBook-Pro.local>
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit 7f68687e7e0ac0770ecc7b8d2afb14b1a072675a[m[33m ([m[1;33mtag: 2.193.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Jun 7 15:07:57 2023 -0700
+
+    GLCP-57389: update test cases with Plv markers (#232)
+    
+    * GLCP-57389: update test cases with Plv markers
+    
+    * GLCP-57389: update test cases with Plv markers
+    
+    * GLCP-57389: update test cases with Plv markers
+
+[33mcommit acb1cbc2c8bc39a9fc53b01862ff9403251114b5[m[33m ([m[1;33mtag: 2.192.0[m[33m)[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Wed Jun 7 13:00:31 2023 -0700
+
+    GLCP-45322: update import path in logic files
+
+[33mcommit 31c1cc271d2b73bf26ced89ff9e0a877c1024866[m[33m ([m[1;33mtag: 2.191.0[m[33m)[m
+Author: Varghese <105465179+varghesehpearuba@users.noreply.github.com>
+Date:   Wed Jun 7 11:18:03 2023 -0700
+
+    GLCP-43916: AOP flows added. (#231)
+    
+    * GLCP-43916: update aop test case in run-st.sh
+    
+    * GLCP-43916: AOP flows added
+    
+    ---------
+    
+    Co-authored-by: kuldips <kuldips@hpe.com>
+
+[33mcommit a637945973dbd699eea2074674ba075137113d4d[m[33m ([m[1;33mtag: 2.190.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Wed Jun 7 19:46:12 2023 +0300
+
+    GLCP-116195: audit logs subscription hotfix - v2 (#229)
+    
+    * DRAFT: Audit-logs hotfix.
+    
+    * DRAFT: Audit-logs hotfix.
+    
+    * DRAFT: Audit-logs hotfix.
+    
+    * DRAFT: Audit-logs hotfix.
+    
+    * DRAFT: Audit-logs hotfix.
+    
+    * GLCP-116195: Audit Logs fix.
+    
+    * GLCP-116195: Audit Logs fix.
+    
+    * GLCP-116195: Audit Logs fix.
+    
+    * GLCP-116195: Audit Logs fix.
+    
+    * GLCP-116195: Audit Logs fix.
+    
+    * GLCP-116195: Audit Logs fix.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 496c2ddecbad62a4435faf36b6cd6ab7e119ebf6[m[33m ([m[1;33mtag: 2.188.0[m[33m)[m
+Author: Varghese <105465179+varghesehpearuba@users.noreply.github.com>
+Date:   Wed Jun 7 09:40:39 2023 -0700
+
+    GLCP-45179: update run-st.sh (#227)
+
+[33mcommit d14a30317d266b66bb7a15a3aae63c7b7470ad11[m[33m ([m[1;33mtag: 2.189.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Jun 7 09:39:24 2023 -0700
+
+    Update conftest.py (#230)
+
+[33mcommit d5b7c6e14a34373a9c02e7eae09199898348cbe1[m[33m ([m[1;31morigin/ritesh_verify_batch_claim_accounts[m[33m)[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Wed Jun 7 14:24:08 2023 +0530
+
+    resolved the conflicts and updated as per review comments
+
+[33mcommit da115602ad137cf6ef6c8234d7d386452bda726f[m
+Merge: 55e5ae1 b98d971
+Author: ritesh-hpe <130388267+ritesh-hpe@users.noreply.github.com>
+Date:   Wed Jun 7 10:48:59 2023 +0530
+
+    Merge branch 'mainline' into ritesh_verify_batch_claim_accounts
+
+[33mcommit b98d971153effafdc45d73133b46636772b65474[m[33m ([m[1;33mtag: 2.187.0[m[33m)[m
+Author: rshettihpe <97263296+rshettihpe@users.noreply.github.com>
+Date:   Tue Jun 6 18:46:58 2023 -0700
+
+    GLCP-58681 : declaring account name across testbeds (#223)
+    
+    * C1220657: Claims activate:Move device from parent to child customer
+    
+    * GLCP-58681: added accounts for other testbeds
+    
+    * GLCP-58681: added account to triton
+    
+    * fix test_move_device_from_parent_to_child_customer.py
+    
+    * GLCP-116365: add account name
+    
+    ---------
+    
+    Co-authored-by: nikhil-pathak <nikhil.pathak@hpe.com>
+    Co-authored-by: Rajalaxmi Shetti <shetti@Rajalaxmis-MacBook-Pro.local>
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit 4338aedd93f281e591715139c3227bcbb9f654f0[m[33m ([m[1;33mtag: 2.186.0[m[33m)[m
+Merge: f6f520f 3497d96
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue Jun 6 17:33:18 2023 -0700
+
+    Merge pull request #224 from glcp/GLCP-57667-1
+    
+    GLCP-115955: fix missing parameter
+
+[33mcommit 3497d963f4c61936a3ab6a60f5f35540f15bae6f[m[33m ([m[1;31morigin/GLCP-57667-1[m[33m)[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Tue Jun 6 16:28:48 2023 -0700
+
+    GCLP-115955: fix missing parameter
+
+[33mcommit f6f520f762b033a5d511d2bdf0b3e91c2c33dcfa[m[33m ([m[1;33mtag: 2.185.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue Jun 6 16:17:04 2023 -0700
+
+    GLCP-45322: fix test data for harness_brownfield_account_parent_pcid (#222)
+
+[33mcommit 60b33c98dcc2aa0f59ae6d7728aa635f41e2b762[m[33m ([m[1;33mtag: 2.184.0[m[33m)[m
+Author: thisisdeepanshu <130387678+thisisdeepanshu@users.noreply.github.com>
+Date:   Wed Jun 7 02:23:50 2023 +0530
+
+    GLCP-45147: verify_claim of a device using app api (#169)
+    
+    * update below files\n "
+    polaris_settings.py /existing_acct_existing_devices/conftest.py network_new_device_test_helper.py conftest.py ../existing_acct_existing_devices/test_claim_vgw_device.py ../existing_acct_existing_devices/network_existing_device_test_helper.py
+    
+    * add C ID in test_claim_vgw_device
+    
+    * add test case C1220640: Claims activate:Archive the unassigned device from the list of devices
+    
+    * update as per latest lib changes
+    
+    * modify helper.pyexisting_acct_new_devices/network_new_device_test_
+    
+    * add test case C1220656 for JIRA ID GLCP-45147
+    
+    * GLCP-45147: add automation/tests/conftest.py
+    
+    * modify pavo, polaris, mira settings.py
+    
+    * GLCP-45147: remove unnecessary test cases
+    
+    * remove duplicate entries from pavo and mira settings.py file
+    
+    * GLCP-45147: remove network_new_device_test_helper.py network_existing_device_test_helper.py and modify the test case C1220656
+    
+    * GLCP-45147: add step to reset the newly created device to aruba factory stock.
+    
+    ---------
+    
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit 68fe18ae607665f382bade135f750a96a3983736[m[33m ([m[1;33mtag: 2.183.0[m[33m)[m
+Merge: 040b794 ac998ff
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue Jun 6 13:34:18 2023 -0700
+
+    Merge pull request #221 from glcp/GLCP-116127
+    
+    GLCP-116127: add msp test case for gateway with eval lic
+
+[33mcommit 040b7946b3add4fcbf346e18155f124d394acb01[m[33m ([m[1;33mtag: 2.182.0[m[33m)[m
+Author: ritesh-hpe <130388267+ritesh-hpe@users.noreply.github.com>
+Date:   Wed Jun 7 00:50:29 2023 +0530
+
+    GLCP-45148 : claim device from two accounts and validate the claimed status (#197)
+    
+    * Completed test case for C1220631 - test_claim_device_acc1_acc2_C1220631
+    
+    * Updated as per review comments. Removed test_claim_device_account1_account2.py file and included the test case in test_bf_str_com_existing_acct_devices.py file.
+    
+    * moved the test to new file for new devices to avoice conflicts
+    
+    * moved the test to new file for new devices to avoice conflicts
+    
+    * commited
+    
+    * Tested with MIRA and PAVO and made necessary changes.
+    
+    * Resolved conflicts
+    
+    * updated as per review comments
+    
+    * updated as per review comments
+    
+    ---------
+    
+    Co-authored-by: ritesszest <ritesh.an@zest.ai>
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit 46d860973fb02eeb5899f3e19602e4c5d91354f9[m[33m ([m[1;33mtag: 2.181.0[m[33m)[m
+Author: Nikhil Pathak <130544244+npathak-hpe@users.noreply.github.com>
+Date:   Wed Jun 7 00:21:25 2023 +0530
+
+    GLCP-58681 : Claims activate:Move device from parent to child customer (#211)
+    
+    * C1220657: Claims activate:Move device from parent to child customer
+    
+    * GLCP-58681: added accounts for other testbeds
+    
+    * GLCP-58681: added account to triton
+    
+    * fix test_move_device_from_parent_to_child_customer.py
+    
+    ---------
+    
+    Co-authored-by: Rajalaxmi Shetti <shetti@Rajalaxmis-MacBook-Pro.local>
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit ac998ff958bdd2e1eaff54489c3c1bfff705527c[m[33m ([m[1;31morigin/GLCP-116127[m[33m)[m
+Merge: 63cbb8d 2b6e277
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Tue Jun 6 11:04:53 2023 -0700
+
+    Merge branch 'mainline' of github.com:glcp/auto-activate-sm-workflows into GLCP-116127
+
+[33mcommit 2b6e27748bef467ad97c882ec66f1a959ce7f494[m[33m ([m[1;33mtag: 2.180.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue Jun 6 10:55:14 2023 -0700
+
+    GLCP-116126: add msp test case for switch with eval lic (#218)
+
+[33mcommit 6d1df32b42782891b8f0c682df515a8e214c9298[m[33m ([m[1;33mtag: 2.179.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Jun 6 20:41:35 2023 +0300
+
+    [GLCP-45314] Claims activate:Customer adds 2 Compute device(s) using CSV upload (#206)
+    
+    * init commit
+    
+    * added 'add csv compute device' test and corresponding utils
+    
+    * moved skipif triton-lite mark from methods to class
+
+[33mcommit 6791d1e80ee1e7d4665313115e935dfab9c16c08[m[33m ([m[1;33mtag: 2.178.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Jun 6 20:40:59 2023 +0300
+
+    [GLCP-45313] Customer adds 2 new Network device(s) using CSV upload with tag to already claimed devices (#189)
+    
+    * init commit
+    
+    * added second network device to the test
+    
+    * changed workflows initialization scope
+    
+    * added several verifications
+    
+    * spelling fix
+
+[33mcommit 63cbb8d2f721651c07afbe282d66f5714b9a0140[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Tue Jun 6 09:34:58 2023 -0700
+
+    GLCP-116127: add test for gateway device for msp/tenant subscription
+
+[33mcommit 55e5ae1f4b60e68dd7d7c60c8ef506c438caf74a[m
+Merge: 1a7a562 fd3911f
+Author: ritesh-hpe <130388267+ritesh-hpe@users.noreply.github.com>
+Date:   Tue Jun 6 21:40:09 2023 +0530
+
+    Merge branch 'mainline' into ritesh_verify_batch_claim_accounts
+
+[33mcommit 1a7a5629bace6ac2a2806de24e8ad076ccfb384c[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Tue Jun 6 21:25:50 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 37502e43747eaf0e19fac5c55e7ab15d60633258[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Tue Jun 6 21:09:15 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit fd3911fb1abbe78242fa17cdddc34bd5064dd781[m[33m ([m[1;33mtag: 2.177.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue Jun 6 08:36:09 2023 -0700
+
+    GLCP-57095: retry mechanism added, device unassign after expiry (#217)
+
+[33mcommit 16953f300494a7005fb6607e38337adc99b462f8[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Tue Jun 6 13:41:29 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit fff0c59c73a078fc299f158a87b77d65af798409[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Tue Jun 6 13:40:21 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 8e4ed5c34129136683ab6ab7e39a17ad4aab9b84[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Tue Jun 6 13:32:46 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 4f8c625569caf488c16159859b58a85dbcb7aa6d[m[33m ([m[1;33mtag: 2.176.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Mon Jun 5 21:52:32 2023 -0700
+
+    GLCP-115955: added msp tests unprov/prov app, assign sub to dev (#215)
+    
+    * GLCP-115955: test case for VGA eval license
+    
+    * GLCP-115955: added msp tests unprov/prov app, assign sub to dev
+
+[33mcommit 7241eaa396e77993f5a43b6c63565d8f3d1f3ce8[m[33m ([m[1;33mtag: 2.175.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 5 18:19:31 2023 -0700
+
+    Update run-st.sh (#214)
+
+[33mcommit 068aec700b2afc20122549797a7d91f1ab4ff0c7[m[33m ([m[1;33mtag: 2.174.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 5 17:20:16 2023 -0700
+
+    Update run-st.sh (#213)
+
+[33mcommit 170841cf56e57d2af216fe3fe9fe4484ed86054e[m[33m ([m[1;33mtag: 2.173.0[m[33m)[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Mon Jun 5 16:22:46 2023 -0700
+
+    GLCP-45322: updated deploy/automation/automation-brigade-manifest.json file
+
+[33mcommit 72b8f29a5d65b405d998dcaa6d48c070d4d75d93[m[33m ([m[1;33mtag: 2.172.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Jun 5 14:37:06 2023 -0700
+
+    GLCP-45322: update docker/Dockerfile docker-compose.yml (#175)
+    
+    * GLCP-45322: update docker/Dockerfile docker-compose.yml
+    
+    ---------
+    
+    Co-authored-by: ubuntu <varghese.padinjareveetil-antony@hpe.com>
+    Co-authored-by: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+
+[33mcommit 2dfd6c401ba6c6e4ed6c51c97268bbf2b550ebcc[m
+Merge: c50b35d 85303d0
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Mon Jun 5 15:10:04 2023 +0530
+
+    Merge remote-tracking branch 'origin/ritesh_verify_batch_claim_accounts' into ritesh_verify_batch_claim_accounts
+
+[33mcommit c50b35d3feefbff92b9adb24d5177a213aea521b[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Mon Jun 5 15:09:28 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 85303d02d8fb1ee83d4da70a48a6fa2380742c70[m
+Merge: 5c33f24 6f1bcb8
+Author: ritesh-hpe <130388267+ritesh-hpe@users.noreply.github.com>
+Date:   Mon Jun 5 14:47:15 2023 +0530
+
+    Merge branch 'mainline' into ritesh_verify_batch_claim_accounts
+
+[33mcommit 5c33f247c24918edfe539de6b99295d3fcb323c2[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Mon Jun 5 14:45:37 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 9b6874dccb85ab860b5af1fc69ee3f7a25f47d36[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Mon Jun 5 14:45:21 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 8132bef06d71a93cfe1cf85f7e3779224840d3c7[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Mon Jun 5 14:41:35 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 6f1bcb8ce2ad5fc16e917175ecde59b38529db6a[m[33m ([m[1;33mtag: 2.171.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Sun Jun 4 07:16:40 2023 -0700
+
+    GLCP-45322: update pavo settings without yoda2 data (#210)
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+
+[33mcommit 80e1b98b822fc8d942e9b08e25eb5b046f224458[m[33m ([m[1;33mtag: 2.170.0[m[33m)[m
+Merge: a744ffc d00e2db
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Sat Jun 3 11:52:05 2023 -0700
+
+    Merge pull request #208 from glcp/GLCP-58801
+    
+    GLCP-58801: C1220609, test for new BRIM HCIaaS sub and storage device added
+
+[33mcommit a744ffceb0762b86a36bb7e033987baa743f6cd8[m[33m ([m[1;33mtag: 2.169.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Sat Jun 3 10:32:36 2023 -0700
+
+    Update test_bf_network_existing_msp_acct_devices.py (#209)
+
+[33mcommit bc47e062489540354dc1aa08ea266c786401cfee[m[33m ([m[1;33mtag: 2.168.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Sat Jun 3 00:35:12 2023 -0700
+
+    GLCP-45322: update pavo settings without yoda2 data (#207)
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+    
+    * GLCP-45322: update pavo settings without yoda2 data
+
+[33mcommit d00e2db30b71551e76b55e3f8bbb91c79c60246e[m[33m ([m[1;31morigin/GLCP-58801[m[33m)[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Fri Jun 2 21:10:58 2023 -0700
+
+    GLCP-58801: C1220609, test for new BRIM HCIaaS sub and storage device added
+
+[33mcommit 811dc9bc521024e0f149479b053b0b50db42d29d[m[33m ([m[1;33mtag: 2.167.0[m[33m)[m
+Author: Shashaank Babu <47215338+shashaankbabu@users.noreply.github.com>
+Date:   Sat Jun 3 02:05:47 2023 +0530
+
+    GLCP-46244: FTs for Gecko (#193)
+    
+    * Added test case for Gecko
+    
+    * Fixed merge issue
+    
+    * Code cleanup
+    
+    * Added un-assign license from device
+    
+    * Updated check_iaas_license_key_assign_to_device
+    
+    * Added changes to create devices along with subscription on demand
+    
+    * Updated the comments
+    
+    * Reverted cluster settings changes
+    
+    * Added exception handling
+    
+    * Corrected return value
+    
+    * Added comments
+    
+    * Addressed review comments
+    
+    * Address review comments
+
+[33mcommit 61992d324e4e588bceb2d00ba0b0d839bb27fe49[m[33m ([m[1;33mtag: 2.166.0[m[33m)[m
+Author: roshniharikantra <105837162+roshniharikantra@users.noreply.github.com>
+Date:   Fri Jun 2 22:44:43 2023 +0530
+
+    GLCP-58549: Added conftest back to support idev ldev change (#198)
+
+[33mcommit 240bd58b714e38aea7f1c069b79a968b4aea54f4[m[33m ([m[1;33mtag: 2.165.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Thu Jun 1 17:47:37 2023 -0700
+
+    GLCP-57667: test new VGW BRIM subscription, assign to device (#204)
+
+[33mcommit 9d00c469b94ef2cd9e6ac29457a3d9a25418e633[m[33m ([m[1;33mtag: 2.164.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Thu Jun 1 19:56:41 2023 +0300
+
+    GLCP-45740: Automate manual assign device to MSP (#188)
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    * GLCP-45740: Suggestion - replaced utility-method. (#191)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+    
+    * GLCP-45740: Automate manual assign device to MSP.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 4728b777fbe1f4fb2424df3e54a2edbdc31d55bb[m[33m ([m[1;33mtag: 2.163.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Jun 1 19:56:21 2023 +0300
+
+    [GLCP-58710] added additional log message for pcid devices verifier (#203)
+    
+    * added additional log message for pcid devices verifier
+    
+    * Update automation/local_libs/activate_inventory/verify_by_api.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit 257aa102b93c62490952407c39acffac0861ff81[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Thu Jun 1 20:32:46 2023 +0530
+
+    Updated as per new helper method created to check device is assigned.
+
+[33mcommit 6ed3465f1c25cda93763847ae7d851307a803373[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Thu Jun 1 14:16:44 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 8f5fd6edef5c11fa88f1165876fcbfc7883ef9a1[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Thu Jun 1 14:15:57 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit 3decb76a225ceedd5a42fc9b18b8c103798550d1[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Thu Jun 1 13:49:19 2023 +0530
+
+    Updated as per review comments
+
+[33mcommit acfea66f2beb9ce1d3dc001db58393b62d635488[m
+Merge: a1cb6b1 9b25d31
+Author: ritesh-hpe <130388267+ritesh-hpe@users.noreply.github.com>
+Date:   Thu Jun 1 12:51:28 2023 +0530
+
+    Merge branch 'mainline' into ritesh_verify_batch_claim_accounts
+
+[33mcommit 9b25d31ff08c8e5a4e4572a84fd4f571ec11c8a1[m[33m ([m[1;33mtag: 2.162.0[m[33m, [m[1;31morigin/abridge[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed May 31 23:29:34 2023 -0700
+
+    Update test_bf_network_existing_acct_new_devices.py (#201)
+
+[33mcommit d8ef9cef3ecec9f9c17fe9212685c6e634d59776[m[33m ([m[1;33mtag: 2.161.0[m[33m)[m
+Merge: 578bfac 1f744fd
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Wed May 31 21:34:59 2023 -0700
+
+    Merge pull request #200 from glcp/GLCP-58121
+    
+    GLCP-58121: Update combined Subscription, AP, Sw and Gw, qty back to …
+
+[33mcommit 1f744fdbbf7ee801b104420e7729774ecbb1e2c9[m[33m ([m[1;31morigin/GLCP-58121[m[33m)[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Wed May 31 19:00:16 2023 -0700
+
+    GLCP-58121: Update combined Subscription, AP, Sw and Gw, qty back to normal
+
+[33mcommit 578bfac72b0809d6d74ba96e55f19478bd6c84a6[m[33m ([m[1;33mtag: 2.160.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed May 31 16:46:31 2023 -0700
+
+    GLCP-57389: update triton-lite data for test cases (#199)
+    
+    * GLCP-57389: update automation/run-st.sh to not include idev ldev cases
+    
+    * GLCP-57389: update automation/run-st.sh to not include idev ldev cases
+    
+    * GLCP-57389: update triton-lite data for test cases
+
+[33mcommit 4ad1f4ad7abbcecdd2c5957ccaf209dcd992471d[m[33m ([m[1;33mtag: 2.159.0[m[33m)[m
+Merge: 9284722 e794325
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Wed May 31 12:54:16 2023 -0700
+
+    Merge pull request #195 from glcp/GLCP-58351
+    
+    GLCP-58351: Test combined Subscription Type: AP, Switch and Gateway, C1220606
+
+[33mcommit e794325b6f5cff9af9cd769f8376d9d3dc4d6ffa[m[33m ([m[1;31morigin/GLCP-58351[m[33m)[m
+Merge: ed28a07 9284722
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Wed May 31 11:54:09 2023 -0700
+
+    Merge remote-tracking branch 'origin/mainline' into GLCP-58351
+
+[33mcommit 928472208f61d401b55f10b1bafbfdb4282a6150[m[33m ([m[1;33mtag: 2.158.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Wed May 31 20:03:22 2023 +0300
+
+    [GLCP-45311] ADI -TestHarness - C1220632 -Claims activate:Claim an assigned Aruba network devices using Serial and Mac from Account 1 to Account 2 (#187)
+    
+    * Added test to claim already assigned device (Negative test)
+    
+    * Moved test to existing devices flow.
+    
+    * Added log message
+    
+    * changed assertion error message
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_acct_existing_devices/test_bf_network_existing_acct_existing_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit aafe9e264e311f35b8d394b12f28f2dbccac27f1[m[33m ([m[1;33mtag: 2.157.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed May 31 08:44:43 2023 -0700
+
+    GLCP-57389: update automation/run-st.sh to not include idev ldev cases (#196)
+    
+    * GLCP-57389: update automation/run-st.sh to not include idev ldev cases
+    
+    * GLCP-57389: update automation/run-st.sh to not include idev ldev cases
+
+[33mcommit a1cb6b14d57ae988e49baf25d8d532b63d174071[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Wed May 31 16:13:28 2023 +0530
+
+    Updated the code as per new changes happened in library
+
+[33mcommit 01468916171432003af405e90687c54940a516d9[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Wed May 31 14:39:43 2023 +0530
+
+    Updated the code as per new changes happened in library
+
+[33mcommit e9f901a37a21b9622f144095bc73a23a7639f917[m[33m ([m[1;33mtag: 2.156.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 30 23:08:20 2023 -0700
+
+    GLCP-57389: change get_devices by acid to accommodate new version of library (#194)
+    
+    * GLCP-57389: remove update to conftest.py related to add cert encryption
+    
+    * GLCP-57389: change get_devices by acid to accommodate new version of library
+    
+    * GLCP-57389: change get_devices by acid to accommodate new version of library
+
+[33mcommit ed28a0781938329e2a512108ee9a4014c420d65d[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Tue May 30 22:56:19 2023 -0700
+
+    GLCP-58351: Test combined Subscription Type: AP, Switch and Gateway
+
+[33mcommit 66666018cff2799f36dab5ce7701743ad9c960fa[m[33m ([m[1;33mtag: 2.155.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 30 13:02:32 2023 -0700
+
+    GLCP-57389: remove update to conftest.py related to add cert encryption (#192)
+
+[33mcommit 3ae60fc363fdbccb4eb2e30e1e55bb58b9a4c749[m[33m ([m[1;33mtag: 2.154.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue May 30 08:30:06 2023 -0700
+
+    GLCP-57666: create BRIM storage subscription key, assign to device (#190)
+
+[33mcommit d1da556a51f327086aa7243b39d4232d9205969e[m[33m ([m[1;33mtag: 2.153.0[m[33m)[m
+Author: roshniharikantra <105837162+roshniharikantra@users.noreply.github.com>
+Date:   Tue May 30 20:51:42 2023 +0530
+
+    GLCP-29371: ST implementation for Idev Ldev compute provisioning (In-Progress) (#166)
+    
+    * GLCP-29371: ST implementation for Idev Ldev
+    
+    * GLCP-29371: Resolved PR comments and updated the test cases
+    
+    * GLCP-29371: Fixed PR comments
+    
+    * GLCP-29371: Fixed PR comments
+    
+    * GLCP-29371: Deleted poetry lock
+    
+    * GLCP-29371: updated
+
+[33mcommit 92a46abe9d89fca1802935b715799b4f4d98b23a[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Tue May 30 20:30:08 2023 +0530
+
+    Updated the code as per new changes happened in library
+
+[33mcommit 1011e08deb509e6c449f6db7bf3ffa91755079d1[m[33m ([m[1;33mtag: 2.152.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri May 26 19:42:42 2023 +0300
+
+    GLCP-58048: Fixed MSP choose-account and navigate to homepage. (#186)
+    
+    * GLCP-58048: Fixed MSP choose-account and navigate to homepage.
+    
+    * GLCP-58048: Fix choose-account for MSP.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit b41f084722ff1cb260c32f1dd2b32abb75e083df[m[33m ([m[1;33mtag: 2.151.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Fri May 26 19:37:48 2023 +0300
+
+    [GLCP-45312] Customer adds 2 new Network device(s) using CSV upload with tag (#177)
+    
+    * Changed one manual claim UI device to CSV upload with corresponding helper methods
+    
+    * Added device tag verification to test steps
+    
+    * Two devices instead of one
+    
+    * Update automation/local_libs/activate_orders/activate_orders_utils.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Changes according comment
+    
+    * cleanup
+    
+    * lib version changed
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit 76b6b0e2d3bafaf0f1d007df795dd3f2323f0d4d[m[33m ([m[1;33mtag: 2.150.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Thu May 25 14:23:32 2023 -0700
+
+    GLCP-57663: new BRIM Subscription order for Compute device (#184)
+
+[33mcommit 3c262f408997729aa631c76eac2fbd0eb12fb130[m[33m ([m[1;33mtag: 2.149.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri May 26 00:23:09 2023 +0300
+
+    GLCP-56571 (#160)
+    
+    * GLCP-56571
+    
+    * GLCP-56571
+    
+    * GLCP-56571
+    
+    * GLCP-56571
+    
+    * GLCP-56571
+    
+    * GLCP-56571
+    
+    * GLCP-56571
+    
+    * GLCP-56571: Automate tags and archiving tests for MSP.
+    
+    * GLCP-56571: Automate tags and archiving tests for MSP.
+    
+    * GLCP-56571: Automate tags and archiving tests for MSP.
+    
+    * GLCP-56571: Automate tags and archiving tests for MSP.
+    
+    * GLCP-56571: Automate tags and archiving tests for MSP.
+    
+    * GLCP-56571: Automate tags and archiving tests for MSP.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit d9709f663a548ca3007e289fdcfe08c0ee51d08d[m[33m ([m[1;33mtag: 2.148.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 25 09:38:45 2023 -0700
+
+    GLCP-57389: update test cases to not run on triton-lite cluster (#185)
+    
+    * GLCP-57389: update test cases to not run on triton-lite cluster
+    
+    * GLCP-57389: update test cases to not run on triton-lite cluster
+
+[33mcommit 02508325cf73ab91d2b22daa97840475a9ae6b4e[m[33m ([m[1;33mtag: 2.147.0[m[33m)[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Wed May 24 19:20:44 2023 -0700
+
+    GLCP-57389: update test cases to remove xfail marker from all cases
+
+[33mcommit 7b2c484bae450e5e25477450a73b949ed9fba67c[m[33m ([m[1;33mtag: 2.146.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Wed May 24 16:04:10 2023 -0700
+
+    GLCP-39389: moved code to a function (#183)
+
+[33mcommit 3d7841c69245f2aa45264eb1e0a1d6bbf7329572[m[33m ([m[1;33mtag: 2.145.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed May 24 09:20:49 2023 -0700
+
+    GLCP-57389: update test suite for activate-sm-workflow test cases (#182)
+
+[33mcommit 17168f97f7a1de2727fedc296df8c26c1061be8c[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Wed May 24 19:46:25 2023 +0530
+
+    Added skip for scale related four tests.
+    updated as per review comments
+
+[33mcommit e2ad97d340aa872dd5de14277e71ea7a3a96f2a8[m
+Author: ritesszest <ritesh.an@zest.ai>
+Date:   Wed May 24 19:36:50 2023 +0530
+
+    Added Test cases for below:
+    C1220653 - claim_batch_verify_status
+    C1220631 - claim_device_acc1_acc2
+    Updated triton_settings.py
+
+[33mcommit b717762bf24b155796775a978ef6bb1e546ae2dd[m[33m ([m[1;33mtag: 2.144.0[m[33m)[m
+Merge: 7aa8f61 d0d62ad
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue May 23 23:29:00 2023 -0700
+
+    Merge pull request #180 from glcp/GLCP-39389
+    
+    GLCP-39389: add test case for new Aruba IAP SKUs
+
+[33mcommit d0d62ad79ed793cc145234783fb9270079395ada[m
+Merge: 116ce50 7aa8f61
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Tue May 23 23:04:17 2023 -0700
+
+    Merge branch 'mainline' of github.com:glcp/auto-activate-sm-workflows into GLCP-39389
+
+[33mcommit 116ce50938b06463c811cd1fbfa190dafe9a8774[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Tue May 23 22:32:48 2023 -0700
+
+    GLCP-39389: add test case for new Aruba IAP SKUs
+
+[33mcommit 7aa8f616576c60584f6f9b63e5e3bb2ac0ffe682[m[33m ([m[1;33mtag: 2.143.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 23 21:20:34 2023 -0700
+
+    GLCP-57389: update test suite for activate-sm-workflow test cases (#179)
+
+[33mcommit 4994245ef84988118bf48b1b29044d0fdca7b64f[m[33m ([m[1;33mtag: 2.142.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue May 23 11:03:23 2023 -0700
+
+    GLCP-57095: add expiration, extend, terminate test cases (#176)
+
+[33mcommit 861ceb5268f4314e355bfbcacb08cf7daa00bbc5[m[33m ([m[1;33mtag: 2.141.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue May 23 20:11:56 2023 +0300
+
+    [GLCP-57252] [Fix] Mark tests, that need TAC user to be skipped on triton-lite and pavo (#178)
+    
+    * Added skipif mark
+    
+    * formatting
+
+[33mcommit e28068c09034d98630fc3764c3365f29c1816c18[m[33m ([m[1;33mtag: 2.140.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Mon May 22 13:48:03 2023 -0700
+
+    GLCP-56106: add sm tests to automation runs (#174)
+
+[33mcommit 4d2404f94964d36411d43acebfd2dd15850efe26[m[33m ([m[1;33mtag: 2.139.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Mon May 22 19:08:21 2023 +0300
+
+    [GLCP-45309] ADI-TestHarness -ZTP - C1220626  ZTP 2nd time claim for the same Endusername on the existing customer account for network device (#157)
+    
+    * GLCP-45996:  MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996:  MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996:  MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996:  MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * init commit + formatting
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * Fixed tests' marks
+    
+    * renamed new devices test module references
+    
+    * GLCP-45996: MSP account ZTP 1st time claim network devices.
+    
+    * rebasing on mk/glcp-45996
+    
+    * Fixed tests' marks
+    
+    * renamed new devices test module references
+    
+    * renamed modules
+    
+    * renamed workflow
+    
+    * Moved method for device manufacturing out of WF modules
+    
+    * changed end username based on workflow
+    
+    * commented audit log tests - for auto claim we have no 'Device Management' event
+    
+    * renamed create device class
+    
+    * Moved autoclaim workflow to separate test module
+    
+    * Changed fixtures usage
+    Changed allure suite name
+    
+    * Added test to run-st.sh
+    
+    * added test case id to the test method name
+    
+    * Changes according PR comments:
+    - reduced number of tests for new flow
+    - added claim verification test
+    - renamed create device helper
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 8b4e7663e5e1259e36a968d42c8c2610adfbf81f[m[33m ([m[1;33mtag: 2.138.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri May 19 21:11:13 2023 +0300
+
+    GLCP-45996: Added suite to CI (#161)
+    
+    * GLCP-45996: Added suite to run-st.sh
+    
+    * GLCP-45996: Added suite to run-st.sh
+    
+    * GLCP-45996: Added suite to run-st
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 6d544a368295245f01e99e5ea826ab0b10fdaabd[m[33m ([m[1;33mtag: 2.137.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 18 15:10:57 2023 -0700
+
+    Update test_bf_str_com_existing_acct_devices.py (#165)
+
+[33mcommit e067bf890aa6d53e20da6f3776b9de642ac49992[m[33m ([m[1;33mtag: 2.136.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 18 12:42:37 2023 -0700
+
+    GLCP-43743: update supported test cases on triton-lite cluster (#164)
+    
+    * Update test_gf_network_new_device_evals_subs_new_acct_manual_claim.py
+    
+    * Update test_create_claim_svc_subs.py (#163)
+
+[33mcommit 08cb83121a5df72714c0f4902418c2e3f86b0181[m[33m ([m[1;33mtag: 2.135.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 18 10:52:32 2023 -0700
+
+    Update test_bf_network_existing_tac_acct_devices.py (#162)
+
+[33mcommit 3ea9bae98e63e22bd02f650f286364b7d0f1240d[m[33m ([m[1;33mtag: 2.134.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 18 08:30:58 2023 -0700
+
+    Update wf_session_new_user_acct_first_order_auto_claim.py (#159)
+
+[33mcommit a22d44327b9d32b6d5fa2c57009ebd2a7bfe79b2[m[33m ([m[1;33mtag: 2.133.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Thu May 18 10:32:46 2023 +0300
+
+    GLCP-45996:  MSP account ZTP 1st time claim network devices. (#148)
+    
+    * GLCP-45996:  MSP account ZTP 1st time claim network devices.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 1dda3020388b4b8186b2b9ca3371dd3670bf0505[m[33m ([m[1;33mtag: 2.132.0[m[33m)[m
+Author: roshniharikantra <105837162+roshniharikantra@users.noreply.github.com>
+Date:   Tue May 16 20:10:52 2023 +0530
+
+    GLCP-56161: Fixed test failures (#156)
+
+[33mcommit 5bd32bd1399dc85df3d11d4b3bfc3a89c2d51973[m[33m ([m[1;33mtag: 2.131.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 16 00:21:30 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo (#155)
+
+[33mcommit a2a3228a0bc02f22b9992967810f49ed3d03fe3f[m[33m ([m[1;33mtag: 2.130.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Mon May 15 22:15:30 2023 -0700
+
+    GLCP-56106: C1220613: Update IAP qty back to normal (#152)
+
+[33mcommit 2437dd7dd08ab692b64aafbc3cc86c9e5e33342e[m[33m ([m[1;33mtag: 2.129.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon May 15 21:48:53 2023 -0700
+
+    GLCP-43743: update supported test cases on triton-lite cluster (#153)
+    
+    * GLCP-43743: update supported test cases on triton-lite cluster
+    
+    * GLCP-43743: update supported test cases on triton-lite cluster
+    
+    * GLCP-43743: update supported test cases on triton-lite cluster
+
+[33mcommit 74777e09bcfe68e5b37e100825e2d5656aab3ec4[m[33m ([m[1;33mtag: 2.128.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon May 15 14:05:51 2023 -0700
+
+    GLCP-43743: update supported test cases on triton-lite cluster (#151)
+
+[33mcommit 0412eb66e941bc75ba66bc27a0940710d70e7bbd[m[33m ([m[1;33mtag: 2.127.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon May 15 08:05:25 2023 -0700
+
+    Update mira_settings.py (#150)
+
+[33mcommit 7de633c44d084f4042845bf2cfe1d68eb26f0944[m[33m ([m[1;33mtag: 2.126.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Sun May 14 22:32:10 2023 -0700
+
+    GLCP-43743: fix ztp case to retry and fix device list by pcid and acid (#149)
+    
+    * GLCP-43743: fix ztp case to retry and fix device list by pcid and acid
+    
+    * GLCP-43743: fix ztp case to retry and fix device list by pcid and acid
+
+[33mcommit af586f66254329ecc96ed3ed7bdd19b583d665b5[m[33m ([m[1;33mtag: 2.125.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri May 12 14:34:29 2023 -0700
+
+    GLCP-40255: FT - SUBSCRIPTION_EVENT not sent on creation of new subscription (#145)
+    
+    * GLCP-40255: FT - SUBSCRIPTION_EVENT not sent on creation of new subscription
+    
+    * GLCP-40255: FT - SUBSCRIPTION_EVENT not sent on creation of new subscription
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+
+[33mcommit b66ec6b87f85aa5f6e342f925312fda61e5f8e27[m[33m ([m[1;33mtag: 2.124.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 11 11:46:33 2023 -0700
+
+    Update pyproject.toml (#144)
+
+[33mcommit 2b5dad3a9d3914780dfcb7dbce208fcd8414572b[m[33m ([m[1;33mtag: 2.123.0[m[33m)[m
+Author: roshniharikantra <105837162+roshniharikantra@users.noreply.github.com>
+Date:   Fri May 12 00:13:35 2023 +0530
+
+    GLCP-44720: Added brownfield test cases for Fulltpm, RTPM, CX (Provision and Firmware scenarios) (#121)
+    
+    * GLCP-44720: Updated helper functions
+    
+    * GLCP-44720: Added test cases
+    
+    * GLCP-44720: Updated poetry lock
+    
+    * GLCP-44720: Removing M2Crypto
+    
+    * GLCP-44720: updating python version
+    
+    * GLCP-44720: Updated marker and pyproject.toml
+    
+    * GLCP-44720: Updated
+    
+    * GLCP-44720: Updated code with mainline changes
+    
+    * GLCP-44720: removing poetry lock
+    
+    * GLCP-44720: removing M2crypto
+    
+    * GLCP-44720: Updated code
+
+[33mcommit 3608fa5566549de4e0e1febf4d24ffe822bb4d8c[m[33m ([m[1;33mtag: 2.122.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu May 11 19:38:37 2023 +0300
+
+    [GLCP-45214] [Automate] Claims activate:ZTP 1st time claim network device, New customer account (#132)
+    
+    * Added test to add alias to the customer and to verify devices auto claim. All related tests marked as skip, because we have no TAC creds for pavo/triton-lite envs
+    
+    * Update automation/tests/workflows/greenfield/test_gf_network_new_device_evals_subs_new_acct_manual_claim.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Update automation/tests/workflows/greenfield/test_gf_network_new_device_evals_subs_new_acct_manual_claim.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Moved code from test to workflow class, added additional assertion
+    
+    * Update automation/tests/workflows/greenfield/wf_session_new_user_acct_first_order_auto_claim.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Added blank line
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit 9cb4ae84a95b18e9391045d8e77985232d6e250a[m[33m ([m[1;33mtag: 2.121.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Thu May 11 17:59:55 2023 +0300
+
+    GLCP-46081: Updates according to recent changes in shared-libs. (#143)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit f76ec4b91211ee79ef17ecca5111617771517a74[m
+Author: dlnu130 <118542391+dlnu130@users.noreply.github.com>
+Date:   Wed May 10 22:31:23 2023 +0530
+
+    GLCP-44720: Added brownfield firmware and provision test cases for IAP, Compute and Storage devices. (#131)
+    
+    * added the IAP, compute, storage testcases
+    
+    * added the response data for provision and firmware call.
+    
+    * fixed the order of testcases
+    
+    * added skip marker for provision testcases
+    
+    * removed regression and plv marker for provision call
+    
+    * removed m2crypto from pyproject.toml file
+    
+    * changed the expected response method name and refactor the code
+    
+    * fixed the order
+    
+    * fixed the failed testcases
+    
+    * removed extra space
+    
+    * rename the expected response data
+
+[33mcommit c61ba3039cc0c9f5051002bb002423e384491141[m[33m ([m[1;33mtag: 2.119.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Wed May 10 20:00:36 2023 +0300
+
+    GLCP-43645: Corrected scenario. (#142)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 75715fdb9b1b1771b05fd4eccfc9091c47b45c7d[m[33m ([m[1;33mtag: 2.118.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 9 21:11:42 2023 -0700
+
+    Update test_bf_network_existing_acct_devices.py (#141)
+
+[33mcommit 62d7c57f9e1ac3572b72bce31c5aa097689f276d[m[33m ([m[1;33mtag: 2.117.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 9 18:57:20 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo (#140)
+    
+    * Update pyproject.toml
+    
+    * Update test_bf_network_existing_acct_devices.py
+    
+    * Update test_bf_network_existing_acct_devices.py
+
+[33mcommit d9b811a4f0432033caf4d35dbb44dbc952ec34a8[m[33m ([m[1;33mtag: 2.116.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 9 15:50:12 2023 -0700
+
+    GLCP-43743: add regression and plv marker for all test cases (#139)
+
+[33mcommit 24b8c311d52ed061d536d5965b1d586f9457bb35[m[33m ([m[1;33mtag: 2.115.0[m[33m)[m
+Merge: c130672 8f0c1de
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Tue May 9 13:47:37 2023 -0700
+
+    Merge pull request #138 from glcp/GLCP-45754
+    
+    GLCP-45754: upgrade qty, downgrade, update IAP subscription
+
+[33mcommit c13067253f7eeb3a6acddb1761ee856797816c02[m[33m ([m[1;33mtag: 2.114.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue May 9 13:46:12 2023 -0700
+
+    GLCP-43743: add msp test data for auto-activate-sm-workflows repo (#137)
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: add msp test data for auto-activate-sm-workflows repo
+
+[33mcommit 8f0c1de359514ee795ceed267c123139ad7d413e[m[33m ([m[1;31morigin/GLCP-45754[m[33m)[m
+Author: adapalav-hpe <vijay.adapala@hpe.com>
+Date:   Tue May 9 09:31:24 2023 -0700
+
+    GLCP-45754: upgrade qty, downgrade, update IAP subscription
+
+[33mcommit 62f6c72f1e875f5f73a182f96383f4832063bd77[m[33m ([m[1;33mtag: 2.113.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Mon May 8 19:12:29 2023 +0300
+
+    GLCP-45090, GLCP-45352: Moving devices between customers(TC C1221613, C1221614) (#122)
+    
+    * Moving devices between customers(TC C1221613, C1225449)
+    
+    * Moving devices between customers(TC C1221613, C1225449)
+    
+    * Moving devices between customers(TC C1221613, C1225449)
+    
+    * GLCP-45090 (GLCP-45304), GLCP-45352 (GLCP-45305): Moving devices between customers(TC C1221613, C1221614)
+    
+    * GLCP-45090 (GLCP-45304), GLCP-45352 (GLCP-45305): Moving devices between customers(TC C1221613, C1221614)
+    
+    * GLCP-45090 (GLCP-45304), GLCP-45352 (GLCP-45305): Moving devices between customers(TC C1221613, C1221614)
+    
+    * GLCP-45090 (GLCP-45304), GLCP-45352 (GLCP-45305): Moving devices between customers(TC C1221613, C1221614)
+    
+    * GLCP-45090 (GLCP-45304), GLCP-45352 (GLCP-45305): Moving devices between customers(TC C1221613, C1221614)
+    
+    * GLCP-45090 (GLCP-45304), GLCP-45352 (GLCP-45305): Moving devices between customers(TC C1221613, C1221614)
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 5d33d51d276f3be5a0da9b3a6f354f2eda350e9c[m[33m ([m[1;33mtag: 2.112.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri May 5 13:52:12 2023 -0700
+
+    GLCP-45442: auto-activate-sm-workflows mark plv test cases for mc run (#134)
+
+[33mcommit 219b264cf8cb142b22212a15ab91f56e0f8020da[m[33m ([m[1;33mtag: 2.111.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 4 20:21:19 2023 -0700
+
+    GLCP-45442: auto-activate-sm-workflows mark plv test cases for mc run (#130)
+
+[33mcommit f0844fcbdfbef91ae50073d9508990b13395234e[m[33m ([m[1;33mtag: 2.110.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu May 4 18:16:08 2023 -0700
+
+    GLCP-45442: auto-activate-sm-workflows mark plv test cases for mc run (#129)
+    
+    * GLCP-45442: auto-activate-sm-workflows mark plv test cases for mc run
+    
+    * GLCP-45442: auto-activate-sm-workflows mark plv test cases for mc run
+
+[33mcommit 095f05f3ed6a498260dc9e684bbbccef607d65f6[m[33m ([m[1;33mtag: 2.109.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu May 4 19:24:59 2023 +0300
+
+    Added xfail marks to alias tests (#123)
+
+[33mcommit 0a6123fbfdd14326d01d3c456ff3419cbc706cc2[m[33m ([m[1;33mtag: 2.108.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed May 3 22:23:41 2023 -0700
+
+    "GLCP-43743: Update test_bf_network_existing_tac_acct_devices.py with xfail till cases are fixed mira (#128)
+
+[33mcommit f40774e94c9ef45cd27ed2e74ab60a91f50f9b11[m[33m ([m[1;33mtag: 2.107.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed May 3 18:38:37 2023 -0700
+
+    Update brnf_network_existing_acct_existing_devices.py (#126)
+
+[33mcommit f0612f9882021809725b18f2b90fa0f51f6ab825[m[33m ([m[1;33mtag: 2.106.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Wed May 3 18:35:26 2023 -0700
+
+    GLCP-45295: create subscription switch and gateway orders (#125)
+
+[33mcommit dbfefae2c739faa9d377d4f3f19d11bf56d3a59f[m[33m ([m[1;33mtag: 2.105.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed May 3 13:47:33 2023 -0700
+
+    Update pyproject.toml (#124)
+
+[33mcommit 0e3a8475215e634d24d9d12a068b5c062a0b6b04[m[33m ([m[1;33mtag: 2.104.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Wed May 3 19:53:39 2023 +0300
+
+    [GLCP-44593] Automate TAC Add alias associating with a customer (#119)
+    
+    * Added test to add alias and verify it was successful
+
+[33mcommit 8fb076107e29485903c07a332f60b385ca784f06[m
+Author: Automation <glcp-giotto@hpe.com>
+Date:   Tue May 2 18:45:47 2023 +0000
+
+    [skip actions] PR Template Enforcement. Please contact glcp-giotto@hpe.com for any clarifications
+
+[33mcommit 133caf1a01d8a8cb65a578aac2196b056eb4fae0[m[33m ([m[1;33mtag: 2.103.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Tue May 2 20:05:45 2023 +0300
+
+    GLCP-44389, GLCP-43855: Automate devices filtering by Subscription Tiers (#116)
+    
+    * GLCP-44389: Automate devices filtering by Subscription Tiers (TC C1302888)
+    
+    * GLCP-44389: Automate devices filtering by Subscription Tiers (TC C1302888)
+    
+    * GLCP-44389: Automate devices filtering by Subscription Tiers (TC C1302888)
+    
+    * GLCP-44389: Automate devices filtering by Subscription Tiers (TC C1302888)
+    
+    * GLCP-44389: Automate devices filtering by Subscription Tiers (TC C1302888)
+    
+    * GLCP-44389: Automate devices filtering by Subscription Tiers (TC C1302888)
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit c4927e218e544b8c446b4b5b4211408291f121f3[m[33m ([m[1;33mtag: 2.102.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon May 1 12:08:18 2023 -0700
+
+    GLCP-44585: fix ADD cases with correct test data for existing devices (#120)
+    
+    * GLCP-44585: make test skip on pavo test environment as tac user is not available
+    
+    * GLCP-44585: fix ADD cases with correct test data for existing devices
+
+[33mcommit ea5ee5ccb37de287954fb91970a60970dc635478[m[33m ([m[1;33mtag: 2.101.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Apr 27 20:39:52 2023 -0700
+
+    GLCP-44585: make test skip on pavo test environment as tac user is not available (#118)
+
+[33mcommit 4353091ae025681d7045c99c0c9474d6300e635f[m[33m ([m[1;33mtag: 2.100.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Apr 27 19:17:53 2023 +0300
+
+    [GLCP-43912] Automate tac generate eval subscription tiers for a customer (#110)
+    
+    * Added tests for:
+    - generating eval subscription;
+    - modifying subscription
+    
+    * pytest marks changed
+    
+    * changed tests order numbers
+    
+    * Added get request to verification.
+    
+    * Added transfering subscription test
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_tac_acct_existing_devices/test_bf_network_existing_tac_acct_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_tac_acct_existing_devices/brnf_network_existing_tac_acct_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Changed according PR comments
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_tac_acct_existing_devices/conftest.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit 1e7596d8712d06f1235f67390547fe1ebfa1c024[m[33m ([m[1;33mtag: 2.99.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Apr 27 09:17:43 2023 -0700
+
+    GLCP-44585: Increase time to run the cases because of evals licenses taking long time (#117)
+
+[33mcommit fd271b2b8ace23692e55174bcc7b8d3147b6bebc[m[33m ([m[1;33mtag: 2.98.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Apr 26 23:26:50 2023 -0700
+
+    GLCP-43743: fix test data for polaris env for storage/compute app (#115)
+    
+    * GLCP-42435: add humio query to common automation lib
+
+[33mcommit de0c8fd23e057132504bd27f016c489b53a55be4[m[33m ([m[1;33mtag: 2.97.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Apr 26 22:09:05 2023 -0700
+
+    GLCP-42435: add humio query to common automation lib (#114)
+
+[33mcommit 671290f2bf798b18e18fb5b426e184dd1fba7e57[m[33m ([m[1;33mtag: 2.96.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Apr 26 15:38:24 2023 -0700
+
+    GLCP-42435: add humio query to common automation lib (#113)
+
+[33mcommit b0d6c4fb1cdeeaaa6472c0008f8f5a1ceb1cd106[m[33m ([m[1;33mtag: 2.95.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Apr 26 14:56:47 2023 -0700
+
+    Update create_claim_svc_subs.py (#112)
+
+[33mcommit 8c82d29c8144733380c48d7716358da0929590c2[m[33m ([m[1;33mtag: 2.94.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Wed Apr 26 17:43:07 2023 +0300
+
+    GLCP-43645: added logging and missed suggestion (#111)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 47fff18899ad736ff1f267b88b6f97a22529cb37[m[33m ([m[1;33mtag: 2.93.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Tue Apr 25 20:50:29 2023 +0300
+
+    Fix Audit Logs table failure. (#108)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 78785679be8715cfd94a0a6c60c11b957fdfe04e[m[33m ([m[1;33mtag: 2.92.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Tue Apr 25 20:49:58 2023 +0300
+
+    GLCP-43645: TAC moving 50 devices to other customer's folder (id: C1221615) (#100)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 9c51862d282d6c09623c4289085e7cf9340d836f[m[33m ([m[1;33mtag: 2.91.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Fri Apr 21 19:38:01 2023 +0300
+
+    [GLCP-43484] TAC:Get devices inside a folder. TestRail ID: C1220701 (#104)
+    
+    TAC:Get devices inside a folder. TestRail ID: C1220701
+
+[33mcommit 106aae455f06cae7c6253b414ff39c1c3df8a84e[m[33m ([m[1;33mtag: 2.90.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Apr 20 13:27:29 2023 -0700
+
+    GLCP-43743: fix test data for triton lite cluster to use correct app (#105)
+    
+    * GLCP-43743: add pavo data for auto-activate-sm-workflows repo
+    
+    * GLCP-43743: fix test data for triton lite cluster to use correct app
+
+[33mcommit 0615101539cfc2f8f6c37352db462dee21f20628[m[33m ([m[1;33mtag: 2.89.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Apr 19 15:29:31 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo (#102)
+
+[33mcommit 6c4d9a73284103d8004da9b1af2315ab8d7f3da7[m[33m ([m[1;33mtag: 2.88.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Wed Apr 19 20:59:03 2023 +0300
+
+    GLCP-43184: Automate TAC moving devices to a folder (id: C1220696) (#91)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    
+    * GLCP-43184: Automate TAC moving devices to a folder (testrail id: C1220696)
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 6d4d0adaeb1f2e37d1fe9bd8a34d4a0f5f3175d9[m[33m ([m[1;33mtag: 2.87.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Wed Apr 19 19:11:22 2023 +0300
+
+    [GLCP-43368] TAC:Edit a folder. TestRail Id C1220699 (#96)
+    
+    * Added test to verify folder details edition (CCS manager)
+    
+    * Changed test order number
+
+[33mcommit 989c9917e0dd8ef0e581c5a81681fec919b361c2[m[33m ([m[1;33mtag: 2.86.0[m[33m, [m[1;31morigin/add_pavo_data[m[33m)[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Wed Apr 19 08:08:54 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo
+
+[33mcommit 0ac7ea9dcf6e9804d65f2f1fd41e61a6cc1356f6[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Wed Apr 19 08:07:41 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo
+
+[33mcommit 7a77a3ea790dcd2e7bfd95b3873c17f17f8a2267[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Wed Apr 19 07:38:28 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo
+
+[33mcommit 1d7bfc041129a5cf8df78597f76c0bdc8cc31bed[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Tue Apr 18 23:18:05 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo
+
+[33mcommit 66ad57a51f39a4ec96a75eb77b0816044fd6a011[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Tue Apr 18 22:16:40 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo
+
+[33mcommit bf54205ad5923d1de345c0657891a7ef485af24d[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Tue Apr 18 22:13:14 2023 -0700
+
+    GLCP-43743: add pavo data for auto-activate-sm-workflows repo
+
+[33mcommit 82c2d432a10458e4ecfed926a6c63c7995d84e02[m[33m ([m[1;32mhumio_tst1[m[33m)[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Tue Apr 18 13:08:06 2023 -0700
+
+    GLCP-42435: add humio query to common automation lib
+
+[33mcommit 2cb4ca49b110a9f2459d4558f9bf6c5cd350d362[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Tue Apr 18 13:02:18 2023 -0700
+
+    GLCP-42435: add humio query to common automation lib
+
+[33mcommit a05fd34df510e59e54382f0c1aad4a01cdbcf005[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Tue Apr 18 12:59:19 2023 -0700
+
+    GLCP-42435: add humio query to common automation lib
+
+[33mcommit 588486075e36d0e33b218570e1cedf2257948145[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Mon Apr 17 23:53:16 2023 -0700
+
+    GLCP-42435: add humio query to common automation lib
+
+[33mcommit 0feb4765949704579049a8271f540e7f6fc32264[m
+Author: kuldips <kuldips@hpe.com>
+Date:   Mon Apr 17 23:47:11 2023 -0700
+
+    GLCP-42435: add humio query to common automation lib
+
+[33mcommit 9ffaa0d556d673b37e9392dda25718e049e8dc8d[m[33m ([m[1;33mtag: 2.85.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri Apr 14 19:35:08 2023 +0300
+
+    GLCP-42923: user_creds for ld_flags fix. (#97)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit f2acbf58a82dad6c98e66b870984d8c5a29f4f42[m[33m ([m[1;33mtag: 2.84.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri Apr 14 09:34:52 2023 -0700
+
+    GLCP-43489: Disable ADD test cases till working in Polaris and triton-lite clusters (#98)
+    
+    * Update test_gf_network_new_device_evals_subs_new_acct_manual_claim.py
+    
+    * Update test_bf_str_com_existing_acct_devices.py
+    
+    * Update test_bf_network_existing_acct_devices.py
+
+[33mcommit 065846ea3b1d459b9ac527deb267ae093f02a3e1[m[33m ([m[1;33mtag: 2.83.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Fri Apr 14 10:04:32 2023 +0300
+
+    [GLCP-32185] Added tests for folder deletion (#90)
+    
+    * Added tests for folder deletion
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_acct_existing_devices/test_bf_network_existing_acct_existing_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * GLCP-43185: Suggestion. (#92)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit a56257db63ca897f58be3bc2d85d22b005d36a7e[m[33m ([m[1;33mtag: 2.82.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Apr 13 20:29:28 2023 -0700
+
+    GLCP-42435: add debug logs to find out the issues during test runs in k8s env. (#95)
+    
+    * Update test_gf_network_new_device_evals_subs_new_acct_manual_claim.py
+    
+    * Update test_create_claim_svc_subs.py (#93)
+    
+    * Update test_bf_network_existing_acct_existing_devices.py (#94)
+
+[33mcommit a050b1f1031119d6715e320cb24016190ad89f12[m[33m ([m[1;33mtag: 2.81.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Wed Apr 12 19:59:26 2023 +0300
+
+    Changed report generator paths (#88)
+
+[33mcommit 09f61e009e93f43de55382545ad915ae4765e5ce[m[33m ([m[1;33mtag: 2.80.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Wed Apr 12 18:25:35 2023 +0300
+
+    GLCP-42279: Pipeline fix for missed TAC-creds. (#87)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit c4ea74c2fb87d7e897e4fb01731cd23c704432cb[m[33m ([m[1;33mtag: 2.79.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue Apr 11 16:21:26 2023 -0700
+
+    GLCP-42465: update pyproject.toml file  (#86)
+    
+    * Update pyproject.toml
+    
+    * Update test_bf_network_existing_acct_devices.py
+
+[33mcommit 46125c10a3b3cb96ee8b1c034f6d008003b46953[m[33m ([m[1;33mtag: 2.78.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue Apr 11 14:53:59 2023 -0700
+
+    GLCP-42465: update pyproject.toml file  (#85)
+    
+    * Update run-st.sh
+
+[33mcommit 6a7861883f42bd5e43c8bf470479b745265953f2[m[33m ([m[1;33mtag: 2.77.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue Apr 11 14:07:04 2023 -0700
+
+    Update pyproject.toml (#84)
+
+[33mcommit a09f5db02461fc75fe28c0a5fc1bb5392acae4a8[m[33m ([m[1;33mtag: 2.76.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Apr 11 23:12:44 2023 +0300
+
+    [GLCP-42278] TAC:Add rule to a folder (#76)
+    
+    * GLCP-42279: added test-case C1220697 (create Folder).
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 5ae74ae1ee0c8728513a41705bd85399a44f89d1[m[33m ([m[1;33mtag: 2.75.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Apr 11 19:30:54 2023 +0300
+
+    [GLCP-42992] Fix import and run-st paths (#83)
+    
+    * Fix import and run-st paths
+    
+    * Fix import
+    
+    * Add new tests to be run
+    
+    * Xfail new TAC test case
+
+[33mcommit eaa73763de2f5896abf50426487e2d6410ac53d9[m[33m ([m[1;33mtag: 2.74.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Tue Apr 11 19:30:41 2023 +0300
+
+    GLCP-42972: Stabilize tests with Audit Logs verifications. (#82)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 0ba89dc8d8fa1e40359cc3e31b2f45c42979d0fe[m[33m ([m[1;33mtag: 2.73.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Apr 10 17:42:17 2023 -0700
+
+    Update run-st.sh (#81)
+
+[33mcommit b3c95a729deb42aed80a0f4f3ac399c9ec8ba472[m[33m ([m[1;33mtag: 2.72.0[m[33m)[m
+Author: adapalav-hpe <104796576+adapalav-hpe@users.noreply.github.com>
+Date:   Mon Apr 10 17:32:09 2023 -0700
+
+    GLCP-42485: Add expiry license for service subscription tests (#80)
+
+[33mcommit 7f4ea5453ed59af7e74b9e0bb6ebc5fbfe6658de[m[33m ([m[1;33mtag: 2.71.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Apr 10 13:54:34 2023 -0700
+
+    GLCP-42435: add delay for service subscription tests (#79)
+    
+    * GLCP-42435: add deley for service subscription tests
+
+[33mcommit f11c7d14e42d759b6e368889b76fd2f20b052912[m[33m ([m[1;33mtag: 2.70.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Mon Apr 10 19:19:49 2023 +0300
+
+    Not breaking for-loop in case of condition matched (#78)
+
+[33mcommit b5e57286d00235a301e41b3b25b4ad3f4922bca5[m[33m ([m[1;33mtag: 2.69.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Mon Apr 10 19:18:26 2023 +0300
+
+    GLCP-42849: Fixed folders clean-up. (#77)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit e399e4e0db0787cd222722cc3fff0a3d2a402689[m[33m ([m[1;33mtag: 2.68.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Sat Apr 8 03:01:46 2023 +0300
+
+    GLCP-42279: added test-case C1220697 (create Folder) (#69)
+    
+    * GLCP-42279: added test-case C1220697 (create Folder).
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit cdc3572ca6ab4a658c2cfc7a504fd6df22bc1e33[m[33m ([m[1;33mtag: 2.67.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Apr 6 18:53:26 2023 +0300
+
+    Changed directory for generated report file and added pprinting to the console (#75)
+
+[33mcommit cffb2a92a8e1f5833725c0ac030c715b491f94c0[m[33m ([m[1;33mtag: 2.66.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Apr 5 14:17:55 2023 -0700
+
+    GLCP-42465: update and fix xfail marker (#74)
+    
+    * GLCP-42465: fix xfail marker
+    
+    * GLCP-42465: update and fix xfail marker
+
+[33mcommit c992549344d36211205757c862e1af5e9ddd90ad[m[33m ([m[1;33mtag: 2.65.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Apr 5 09:28:51 2023 -0700
+
+    GLCP-42465: fix xfail marker (#73)
+
+[33mcommit de387b7326e2e8b9ec1d2e58a050fac91c3dbcc1[m[33m ([m[1;33mtag: 2.64.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue Apr 4 17:05:34 2023 -0700
+
+    GLCP-42465: enable test cases for mira for service subscriptions (#72)
+    
+    * GLCP-42465: enable test cases for mira only for audit logs and authz
+    
+    * GLCP-42465: enable test cases for mira for service subscriptions
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit f16ef35a7e41b799d1c94522bcf79bd5a738527b[m[33m ([m[1;33mtag: 2.63.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue Apr 4 15:38:02 2023 -0700
+
+    GLCP-42465: enable test cases for mira only for audit logs and authz (#71)
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 695e3ec7c20701e77b49c01b8d4e8397930e1946[m[33m ([m[1;33mtag: 2.62.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Tue Apr 4 20:06:44 2023 +0300
+
+    GLCP-40707: ordered devices details fix. (#70)
+    
+    * GLCP-40707: ordered devices details fix.
+    
+    * GLCP-40707: ordered devices details fix.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 92a1d518527efc0e7839991d5f82655839019f46[m[33m ([m[1;33mtag: 2.61.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Apr 4 19:19:24 2023 +0300
+
+    [GLCP-41769] Download csv device list from the activate tab - workflow implementation (#59)
+    
+    * Added test to check download inventory csv for all workspace activate devices list
+    
+    * moved pcid_name to init section
+    
+    * Formatting
+    
+    * Enabled logs to the stdout
+
+[33mcommit 631e55184c10e2e31dc202e634a72aeed236027b[m[33m ([m[1;33mtag: 2.60.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Apr 3 15:26:29 2023 -0700
+
+    GLCP-40707: C1220654- Test case to claim network device using App API with new data (#65)
+    
+    * Raji app api changes
+    
+    * update
+    
+    * claim with app api works. need to update claim function to take devices list
+    
+    * Claim network device using App API complete. Verification using get_Devices_by_pcid function complete
+    
+    * Claim network device using App API complete. Verification using get_Devices_by_pcid function complete. v2
+    
+    * Delete .DS_Store
+    
+    Not a required file and needs to be removed as per the comment son the PR
+    
+    * Delete poetry.lock
+    
+    need not be committed per the PR comments.
+    
+    * GLCP-40707-pr comments addressed
+    
+    * GLCP-42010: fix test data for auto-activate-sm-workflows
+    
+    * GLCP-40707: C1220654- Test case to claim network device using App API with new data
+    
+    * Update brnf_network_existing_acct_devices.py
+    
+    ---------
+    
+    Co-authored-by: Rajalaxmi Shetti <shetti@Rajalaxmis-MacBook-Pro.local>
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+    Co-authored-by: rshettihpe <97263296+rshettihpe@users.noreply.github.com>
+
+[33mcommit a80e10601a1245217d8129c2f27fa9dd48c9f169[m[33m ([m[1;33mtag: 2.59.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Sun Apr 2 21:07:19 2023 -0700
+
+    GLCP-40718: Add test case for C1220603, AP (#68)
+    
+    * GLCP-40718: Add test case for C1220603, AP
+    
+    * GLCP-40718: Add test case for C1220603, AP
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 39e08aa87c3cb3725a3a66c637f6efd37c3f247c[m[33m ([m[1;33mtag: 2.58.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri Mar 31 20:31:32 2023 -0700
+
+    Update results_parser.py (#67)
+
+[33mcommit 6eb254ab6429590f3283f0f3c2aff2ad071f7e22[m[33m ([m[1;33mtag: 2.57.0[m[33m)[m
+Author: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+Date:   Fri Mar 31 09:24:00 2023 -0700
+
+    GLCP-42010: fix test data for auto-activate-sm-workflows
+
+[33mcommit 4bdf7b378cd954757588e30a77c0fc0e8d5271a3[m[33m ([m[1;33mtag: 2.56.0[m[33m)[m
+Author: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+Date:   Fri Mar 31 09:17:05 2023 -0700
+
+    GLCP-42010: fix test data for auto-activate-sm-workflows
+
+[33mcommit b509cdc8cd01280856a134664877938c32bf6205[m[33m ([m[1;33mtag: 2.55.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Fri Mar 31 18:16:10 2023 +0300
+
+    Increased timedelta for the test, to avoid false-failed tests in case of too long test suite execution (more than 5 minutes) (#61)
+
+[33mcommit b36818f0902b4f2a1e101ab16a1e5b14f6a3d6d5[m[33m ([m[1;33mtag: 2.54.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Fri Mar 31 18:15:34 2023 +0300
+
+    Changed choose account from by index to by name. (#60)
+
+[33mcommit 8fb8b9a48572e69f193e0db436dc2ad1359fcaf7[m[33m ([m[1;33mtag: 2.53.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Fri Mar 31 18:12:17 2023 +0300
+
+    Fix the case, when test result does not have any 'labels' (#58)
+
+[33mcommit b1fa8285c2fa0cd0a52d0285ba28e005047110f7[m[33m ([m[1;33mtag: 2.52.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri Mar 31 13:55:19 2023 +0300
+
+    GLCP-41293: Refactor and add tests for brownfield. (#43)
+    
+    * GLCP-41293: Refactor and add tests for brownfield - C1220622.
+    
+    * GLCP-41293: Fixed cred keys and removed breakpoint.
+    
+    * GLCP-41293: Common method moved to helpers.
+    
+    * GLCP-41293: Moving reused value to attribute.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit cacb516c952217d6374b5d0e9a5ab6aeaa90d0dc[m[33m ([m[1;33mtag: 2.51.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Mar 30 23:54:41 2023 -0700
+
+    GLCP-42010: fix test data for auto-activate-sm-workflows (#64)
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit cf0f1b5d68f0b9b46b65c40b03289e68eaae8ccc[m[33m ([m[1;33mtag: 2.50.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Mar 30 18:00:44 2023 -0700
+
+    Update test_bf_str_com_existing_acct_devices.py (#63)
+
+[33mcommit 6db74469a51c2568d5d0b23734fcf5cefa535cbb[m[33m ([m[1;33mtag: 2.49.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Mar 30 14:42:19 2023 -0700
+
+    GLCP-42010: fix test data for auto-activate-sm-workflows (#62)
+    
+    * Update polaris_settings.py
+    
+    * Update polaris_settings.py
+    
+    * Update test_bf_str_com_existing_acct_devices.py
+
+[33mcommit 8cd2a9b4c6891cfb3df7c32e8df19f881698cf2f[m[33m ([m[1;33mtag: 2.48.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Mar 30 09:54:49 2023 -0700
+
+    GLCP-42010: fix test data for auto-activate-sm-workflows (#57)
+    
+    * GLCP-42010: fix test data for auto-activate-sm-workflows
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit d4b98565439a11100d7a4df5524bd1ec04710a87[m[33m ([m[1;33mtag: 2.47.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Mar 29 18:14:00 2023 -0700
+
+    GLCP-41952: disable service subscription test case until add further  (#56)
+    
+    * Update run-st.sh
+    
+    * Update test_gf_network_new_device_evals_subs_new_acct_manual_claim.py
+
+[33mcommit 28b9de2d160e398545250ece611ee7d64b2ffcab[m[33m ([m[1;33mtag: 2.46.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Mar 29 15:43:52 2023 -0700
+
+    GLCP-41952: disable service subscription test case until add further https://hpe.atlassian.net/browse/GLCP-41593 (#55)
+    
+    * Update run-st.sh
+    
+    * Update wf_session_new_user_acct_first_order_auto_claim.py
+
+[33mcommit ba33cf05be8993e7f74014a4f5212c309f724699[m[33m ([m[1;33mtag: 2.45.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Mar 30 00:40:53 2023 +0300
+
+    [GLCP-41766] Add logging to TestRail report generator (#53)
+    
+    * Added log messages and docstrings to methods
+    
+    * Added optional argument '--report_path', to define the path, where result report will be saved.
+
+[33mcommit 44608df1427a2173d435099942bb0904e8395775[m[33m ([m[1;33mtag: 2.44.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Mar 30 00:39:07 2023 +0300
+
+    [GLCP-41395] Device History Event should be published for each device claim - Add for activate tile (#51)
+    
+    * Added tests to verify device history events
+    
+    * Moved to activate_inventory
+    
+    * Changes according PR comment
+
+[33mcommit 33e4c5ca29f606a965b79c92732865f3319662dc[m[33m ([m[1;33mtag: 2.43.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Thu Mar 30 00:37:48 2023 +0300
+
+    GLCP-41293: Hotfix for audit-logs - search field cleanup. (#54)
+    
+    * GLCP-41293: Hotfix for audit-logs - search field cleanup.
+    
+    * GLCP-41293: Hotfix for audit-logs - search field cleanup.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 71e28dac24a5829682ceaa75968bc9c208d3acc9[m[33m ([m[1;33mtag: 2.42.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 27 19:02:32 2023 -0700
+
+    GLCP-41172: add app api data for brownfield testcases (#49)
+    
+    
+    * GLCP-41172: add app api data for brownfield testcases
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit fa859eb7e4f257be73636e25e7bf0c27c362b5f7[m[33m ([m[1;33mtag: 2.41.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 27 18:08:40 2023 -0700
+
+    GLCP-41172: fix automation/conftest.py import path (#47)
+    
+    * GLCP-41172: add test rail test cases in pytest marker
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit a6bc417f3db5978feb74874cd6a160069308a498[m[33m ([m[1;33mtag: 2.40.0[m[33m)[m
+Author: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+Date:   Mon Mar 27 17:44:55 2023 -0700
+
+    GLCP-41172: add test rail test cases in pytest marker
+
+[33mcommit 388915f7b887f4ecb9dfe1f2eca00d433ff7ce06[m[33m ([m[1;33mtag: 2.39.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 27 16:33:37 2023 -0700
+
+    GLCP-41172: fix automation/conftest.py import path (#46)
+    
+    * GLCP-41172: fix automation/conftest.py import path
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 1caaf044caca446de12cfd1f247cdb7eb882dd08[m[33m ([m[1;33mtag: 2.38.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Mon Mar 27 22:27:26 2023 +0300
+
+    GLCP-40895: Reuse the same browser for several checks in UI tests (#41)
+    
+    * GLCP-40895: Reuse the same browser instance for several checks in UI tests.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 94aae2a7593a58ff0e1e08d2f238131fa33eb4b8[m[33m ([m[1;33mtag: 2.37.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Mon Mar 27 20:06:51 2023 +0300
+
+    [GLCP-41009] Investigate TestRail / pytest integration possibilities. MVP if applicable (#39)
+    
+    * Added test results parser (for test rail integration)
+
+[33mcommit a1403d4f8d523d9212ea7e0cd31c90fa7e6099e7[m[33m ([m[1;33mtag: 2.36.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 27 09:56:39 2023 -0700
+
+    GLCP-41172: add test rail test cases in pytest marker (#44)
+    
+    * GLCP-41172: add test rail test cases in pytest marker
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 582e47b3f68851f0e02828143ebbe84da4409244[m[33m ([m[1;33mtag: 2.35.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 27 08:20:18 2023 -0700
+
+    GLCP-41257: create hoku test data for auto-activate-sm-workflows (#40)
+    
+    * GLCP-41257: create hoku test data for auto-activate-sm-workflows
+    
+    * GLCP-41257: create hoku test data for auto-activate-sm-workflows
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 1a04f13d5a5b5071407d67668fc5cdb1452168c8[m[33m ([m[1;33mtag: 2.34.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 27 08:20:02 2023 -0700
+
+    GLCP-41172: add common methods in common folders for used by all work… (#37)
+    
+    
+    * GLCP-41172: add common methods in common folders for used by all workflows
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 78715469db97a364d37035783b9ce0e663beba3a[m[33m ([m[1;33mtag: 2.33.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri Mar 24 18:16:09 2023 +0200
+
+    GLCP-41113: Logs traces improvement - moved from fixture. (#38)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 52747cb7c9cddfe7a707f95a19174ad548b061fe[m[33m ([m[1;33mtag: 2.32.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Wed Mar 22 21:42:15 2023 +0200
+
+    GLCP-41113: Logs traces for new account sign-up. (#36)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 5f4d581028b8fbb5b69b9be891bdad8a1d46be7f[m[33m ([m[1;33mtag: 2.31.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Tue Mar 21 22:03:13 2023 +0200
+
+    GLCP-39577: Enable audit-logs tests. (#35)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 22f6a292bb8f1fdf1d8e829d69d19e692f2c989c[m[33m ([m[1;33mtag: 2.30.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 20 15:37:15 2023 -0700
+
+    GLCP-38905: add service subscription tests (#34)
+    
+    * GLCP-38905: add service subscription tests
+    
+    * GLCP-38905: add service subscription tests
+    
+    * GLCP-38905: add service subscription tests
+    
+    * GLCP-38905: add service subscription tests
+    
+    * GLCP-38905: add service subscription tests
+    
+    * Delete test.log
+    
+    * Delete pytest_marker.py
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 1de2f8d189bce58e16d9f8e7a27d7b1dd7eac1c7[m[33m ([m[1;33mtag: 2.29.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 20 14:25:44 2023 -0700
+
+    GLCP-38905: add service subscription tests (#33)
+    
+    * GLCP-38905: add service subscription tests
+    
+    * GLCP-38905: add service subscription tests
+    
+    * GLCP-38905: add service subscription tests
+    
+    * GLCP-38905: add service subscription tests
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 16f1ac54279034aa0356e4b1785a68e18974b43b[m[33m ([m[1;33mtag: 2.28.0[m[33m)[m
+Merge: 9f59c44 8fb2b7a
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Mon Mar 20 16:46:52 2023 +0200
+
+    Merge pull request #16 from glcp/mk/glcp-39577
+    
+    GLCP-39577: Update tests with device inventory and subscriptions
+
+[33mcommit 8fb2b7af1ec36205eaff99758f2a5eb1c46b736a[m
+Merge: 3d9dcb3 9f59c44
+Author: Max Kalinich <Max Kalinich>
+Date:   Mon Mar 20 12:06:58 2023 +0200
+
+    Merge branch 'mainline' into mk/glcp-39577
+    
+    # Conflicts:
+    #       automation/tests/workflows/brownfield/networking/test_bf_network_existing_acct_devices.py
+
+[33mcommit 3d9dcb315cf68cfce08034260535939d147c4e2a[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Mon Mar 20 12:03:55 2023 +0200
+
+    GLCP-39577, GLCP-40894: Device inventory and subscriptions pages, added items count verifications.
+
+[33mcommit 9f59c44449ac48c1e6ab4e0c029766f7575c6037[m[33m ([m[1;33mtag: 2.27.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Sat Mar 18 01:35:12 2023 -0700
+
+    Update conftest.py (#31)
+
+[33mcommit 015cfbb0c4b2b3d13e5eeaf04a0c9d16133a8d30[m[33m ([m[1;33mtag: 2.26.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri Mar 17 22:18:54 2023 -0700
+
+    GLCP-38905: fix test cases for auto-activate-sm-workflows for triton-lite namespace (#30)
+    
+    * Update parser.sh
+    
+    * Update run-st.sh
+
+[33mcommit 5e45d67e3ccaee91f28d5ce89b1eef070465c2a4[m[33m ([m[1;33mtag: 2.25.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri Mar 17 16:17:18 2023 -0700
+
+    GLCP-38905: enable test cases for auto-activate-sm-workflows (#29)
+    
+    * GLCP-38905: enable test cases for auto-activate-sm-workflows
+    
+    * GLCP-38905: enable test cases for auto-activate-sm-workflows
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit c1dc79ec1dccb30983f6c1ced5da85ec7bb9a8b1[m[33m ([m[1;33mtag: 2.24.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri Mar 17 13:39:00 2023 -0700
+
+    GLCP-38905: enable test cases for auto-activate-sm-workflows (#28)
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 8b51ff1d334d1ccba99c716bf8e28a88724bd466[m
+Merge: f37ac27 a6bc80e
+Author: Max Kalinich <Max Kalinich>
+Date:   Thu Mar 16 21:03:38 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit a6bc80e073b0a3c92386e92251c63336b031b094[m[33m ([m[1;33mtag: 2.23.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Thu Mar 16 10:44:25 2023 -0700
+
+    GLCP-38905: enable test cases for auto-activate-sm-workflows (#27)
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 54ed19093bd092421028a29e5b95aabd581a3f6e[m[33m ([m[1;33mtag: 2.22.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Mar 16 19:44:08 2023 +0200
+
+    [GLCP-40357] sol-auto test case move to auto-sm-workflow (#21)
+    
+    * Initial commit: tests migration
+    
+    * Reverted user_creds.json
+    
+    * Added user creds to gitignore
+    
+    * Added user creds to gitignore
+    
+    * Resolve some formatting problems
+    
+    * Additional formatting
+    
+    * Formatting
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_acct_existing_devices/brnf_network_existing_acct_existing_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_acct_existing_devices/brnf_network_existing_acct_existing_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_acct_existing_devices/brnf_network_existing_acct_existing_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Update automation/tests/workflows/brownfield/networking/existing_acct_existing_devices/brnf_network_existing_acct_existing_devices.py
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+    
+    * Changed storage state file name
+    
+    * Changed tests ordering marks
+    
+    ---------
+    
+    Co-authored-by: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+
+[33mcommit f37ac272f609bb27537e7115836eb94992c0542d[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Thu Mar 16 11:20:10 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit 92bc9188ee0407c30aa50c4beaf6ca288e293321[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Thu Mar 16 09:38:50 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit fb8c59e842ced0c74026a11fc4ec5e113a7dc78c[m
+Merge: d9f8b91 d8c5211
+Author: Max Kalinich <Max Kalinich>
+Date:   Thu Mar 16 09:37:51 2023 +0200
+
+    Merge branch 'mainline' into mk/glcp-39577
+
+[33mcommit d8c52117bb95ba6e1cab6eeb8d29fe1981bbc5f9[m[33m ([m[1;33mtag: 2.21.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Mar 15 23:51:04 2023 -0700
+
+    GLCP-38905: update parser.sh and run-st.sh files (#26)
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit d61f518f62472e74d5eb8269559f8ab27f98e7b9[m[33m ([m[1;33mtag: 2.20.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Mar 15 22:44:36 2023 -0700
+
+    GLCP-38905: update parser.sh and run-st.sh files (#25)
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 4c217dc8ea28d1109b8998eb6963bb105e0d0eb8[m[33m ([m[1;33mtag: 2.19.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Wed Mar 15 16:57:27 2023 -0700
+
+    GLCP-38905: update parser.sh and run-st.sh files (#24)
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit dd0323905d8980a4128377ea469af66d51cd7de8[m[33m ([m[1;33mtag: 2.18.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Wed Mar 15 19:56:12 2023 +0200
+
+    Added user_creds to gitignore (#23)
+
+[33mcommit 74d662ba3ffbb4e11c316524ba1656d43cbb8388[m[33m ([m[1;33mtag: 2.17.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Wed Mar 15 18:47:29 2023 +0200
+
+    [GLCP-40254] New sm case (#19)
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: Add SM order creation test case
+    
+    * GLCP-38905: Add SM order creation test case
+    
+    * GLCP-38905: update parser.sh and run-st.sh files
+    
+    * Formatting
+    
+    * [GLCP-40188] Refactor helper function to be able to use page objects for Login (#18)
+    
+    * Changed usage of the login function to new login page object
+    
+    * Formatting change
+    
+    * Update brnf_network_existing_acct_devices.py
+    
+    * Update wf_session_new_user_acct_first_order_auto_claim.py
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo (#17)
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MBP.attlocal.net>
+    
+    * [GLCP-40188] Refactor helper function to be able to use page objects for Login (#18)
+    
+    * Changed usage of the login function to new login page object
+    
+    * Formatting change
+    
+    * Update brnf_network_existing_acct_devices.py
+    
+    * Update wf_session_new_user_acct_first_order_auto_claim.py
+    
+    * Formatting
+    
+    * Formatting
+    
+    * Changed credential and test
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MBP.attlocal.net>
+    Co-authored-by: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+
+[33mcommit d9f8b91c6a1ba005d17ccfbb4ef114bad08f14a5[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Wed Mar 15 16:54:46 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit 2c152f2d103677fd920b86e699ec650416dfb594[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Wed Mar 15 16:37:25 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit db6f61e14e4e1641de76112d2002791df118f963[m
+Merge: 738a00f 65ae4f9
+Author: Max Kalinich <Max Kalinich>
+Date:   Wed Mar 15 12:45:50 2023 +0200
+
+    Merge branch 'mainline' into mk/glcp-39577
+    
+    # Conflicts:
+    #       automation/tests/workflows/brownfield/networking/brnf_network_existing_acct_devices.py
+
+[33mcommit 738a00f8a8931eb91c5b67d1412bb9e45fa43822[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Wed Mar 15 12:15:28 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit 65ae4f9e93f06d9d7a2a6b9d91b55bb8cdde2285[m[33m ([m[1;33mtag: 2.16.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Tue Mar 14 23:56:40 2023 -0700
+
+    GLCP-38905: update job yaml name (#20)
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 22e733ac8f8ae392c81f2e25557c999ccc88ecd7[m[33m ([m[1;33mtag: 2.15.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Tue Mar 14 18:56:50 2023 +0200
+
+    [GLCP-40188] Refactor helper function to be able to use page objects for Login (#18)
+    
+    * Changed usage of the login function to new login page object
+    
+    * Formatting change
+    
+    * Update brnf_network_existing_acct_devices.py
+    
+    * Update wf_session_new_user_acct_first_order_auto_claim.py
+
+[33mcommit dd43075f523ceef200fbb1d118fd6c9b43da3acb[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Tue Mar 14 15:42:37 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit e64003f30f516b0ad284a721dcd0f82cedacde52[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Tue Mar 14 15:40:17 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit 702e31c7ed7307849946aeb4922c425ddd1da916[m
+Merge: d7d9b21 66b9241
+Author: Max Kalinich <Max Kalinich>
+Date:   Tue Mar 14 12:01:41 2023 +0200
+
+    Merge branch 'mainline' into mk/glcp-39577
+    
+    # Conflicts:
+    #       automation/tests/workflows/brownfield/networking/brnf_network_existing_acct_devices.py
+
+[33mcommit 66b9241455c680b47222b6d2eb62a7b38ccfe4bd[m[33m ([m[1;33mtag: 2.14.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Mar 13 14:06:40 2023 -0700
+
+    GLCP-38905: update test creds file for activate-sm-workflows repo (#17)
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    * GLCP-38905: update test creds file for activate-sm-workflows repo
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MBP.attlocal.net>
+
+[33mcommit d7d9b21fe959543c30b1168c3be10c97482e96bb[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Mon Mar 13 16:10:55 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit 9dc94606761a7101abd7cad9282112151a9a1bfd[m
+Author: Max Kalinich <Max Kalinich>
+Date:   Fri Mar 10 20:02:24 2023 +0200
+
+    GLCP-39577: Update tests with navigation to device inventory and subscriptions pages
+
+[33mcommit aabf57694cbb5a95bb080ce37365024ede023ab9[m[33m ([m[1;33mtag: 2.13.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Fri Mar 10 08:24:50 2023 -0800
+
+    Update README.md
+
+[33mcommit 725a11993b48edce4849b350c807562d7a37cc11[m[33m ([m[1;33mtag: 2.12.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri Mar 10 10:17:28 2023 +0200
+
+    GLCP-39328: New Page Object classes and related action methods (#15)
+    
+    * GLCP-39328: New Page Object classes and related action methods
+    
+    * GLCP-39328: New Page Object classes and related action methods
+    
+    * GLCP-39328: New Page Object classes and related action methods
+    
+    * GLCP-39328: New Page Object classes and related action methods
+    
+    * GLCP-39328: New Page Object classes and related action methods
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 2139e78d06b80fc88f71a8392c970de254de17d0[m[33m ([m[1;33mtag: 2.11.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri Mar 3 10:13:34 2023 +0200
+
+    GLCP-39104: Inherit App API from common superclass (#14)
+    
+    * GLCP-39104: Inherit App API from common superclass
+    
+    * GLCP-39104: Inherit App API from common superclass
+    
+    * GLCP-39104: Inherit App API from common superclass
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit d64619eeabaa3a719ed825b6a862153400511ae4[m[33m ([m[1;33mtag: 2.10.0[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Wed Mar 1 20:49:44 2023 +0200
+
+    GLCP-38821: Inherit App api from common superclass and update settings. (#13)
+    
+    * GLCP-38821: Inherit App api from common superclass and update settings.
+    
+    * GLCP-38821: Inherit App api from common superclass and update settings.
+    
+    * GLCP-38821: Inherit App api from common superclass and update settings.
+    
+    * GLCP-38821: Corrected settings.
+    
+    ---------
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 37b473afa35470f29cbfe8f7e2957612aa6de33c[m[33m ([m[1;33mtag: 2.9.0[m[33m)[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Feb 27 12:41:52 2023 -0800
+
+    GLCP-37513: update Dockerfile with corret test-image name (#12)
+    
+    * GLCP-37513: update Dockerfile with corret test-image name
+    
+    * GLCP-37513: update Dockerfile with corret test-image name
+    
+    ---------
+    
+    Co-authored-by: Kuldip Singh <sikuldip@Kuldips-MacBook-Pro.local>
+
+[33mcommit 62efd90a6ec49ed8f898e953e5542635681aa71a[m[33m ([m[1;33mtag: 2.8.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Mon Feb 27 18:31:00 2023 +0200
+
+    [GLCP-38860]: Make code structure similar to other repos (#11)
+    
+    * Moved tests and corresponding utils to automation directory, changed Dockerfile accordingly.
+    
+    * Fixed path for ci job
+    
+    * Fixed path for lint script
+
+[33mcommit abccdfb84b15216154576bf51e7f57eb239da6bf[m[33m ([m[1;33mtag: 2.7.0[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Mon Feb 27 16:19:59 2023 +0200
+
+    [GLCP-38806] Fixed ci_merge.yaml (#10)
+    
+    * Fixed ci_merge.yaml
+
+[33mcommit 29ce36c096fa8e22329fdfad7a50118b7c889119[m[33m ([m[1;33mtag: 2.0.4[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Fri Feb 24 17:41:22 2023 +0200
+
+    [GLCP-38635]: Lint step of the pipeline need to be fixed (#8)
+    
+    * Add files via upload
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Added scripts (for poetry only)
+    
+    * Fixed imports
+    
+    * Fixed failed test + pytest.ini
+    
+    * Added several folders for CI routines
+    
+    * Renamed output image
+    
+    * Fixed docker build + corresponding updates
+    
+    * Delete poetry.lock
+    
+    Due to error in the pipeline
+    
+    * Muted lint pipeline step. Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    * Clean up sol-auto artifacts
+    
+    * verbose to poetry install
+    
+    * Uncommented Lint pipeline step
+    
+    * Fixed Dockerfile
+    
+    * Updated README.md
+    
+    * Update README.md
+    
+    * Removed poetry.lock, due to pipeline problem
+    
+    * Freeze playwright version because of new release has a conflict with gclib version of the source image
+    
+    * First try
+    
+    * Second try
+    
+    * Second try
+    
+    * Third try
+    
+    * Forth try
+    
+    * Fifth try
+
+[33mcommit 8a56f67470091566084670ae952b30f852a1ae77[m[33m ([m[1;33mtag: 2.0.3[m[33m)[m
+Author: Maksym Kalinich <121105261+hpemaxkalinich@users.noreply.github.com>
+Date:   Fri Feb 24 17:38:32 2023 +0200
+
+    GLCP-38346: Page Object in Audit Logs. (#9)
+    
+    Co-authored-by: Max Kalinich <Max Kalinich>
+
+[33mcommit 0743a588b7d052a5764dc3df31b58850c2fe0d25[m[33m ([m[1;33mtag: 2.0.2[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Feb 23 18:13:17 2023 +0200
+
+    [GLCP-38333] Move brownfield tests and fix it's imports (#6)
+    
+    * Add files via upload
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Added scripts (for poetry only)
+    
+    * Fixed imports
+    
+    * Fixed failed test + pytest.ini
+    
+    * Added several folders for CI routines
+    
+    * Renamed output image
+    
+    * Fixed docker build + corresponding updates
+    
+    * Delete poetry.lock
+    
+    Due to error in the pipeline
+    
+    * Muted lint pipeline step. Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    * Clean up sol-auto artifacts
+    
+    * verbose to poetry install
+    
+    * Uncommented Lint pipeline step
+    
+    * Fixed Dockerfile
+    
+    * Updated README.md
+    
+    * Update README.md
+    
+    * Removed poetry.lock, due to pipeline problem
+    
+    * Added brownfield tests with corresponding import's fixes
+    
+    * PEP formatting
+    
+    * Deleted unused pipeline-related settings.py module.
+    PEP formatting
+    
+    * PEP formatting (brownfield)
+    
+    * Changes according review comment
+    
+    * Freeze playwright version because of new release has a conflict with gclib version of the source image
+
+[33mcommit 7ad4f70ea62629168103b97a730d5cadc75947a6[m[33m ([m[1;33mtag: 2.0.1[m[33m)[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Thu Feb 23 18:10:55 2023 +0200
+
+    GLCP-38229: Migrate CI routines for docker container creation from sol-auto to auto-activate-sm-workflows (#3)
+    
+    * Add files via upload
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Added scripts (for poetry only)
+    
+    * Fixed imports
+    
+    * Fixed failed test + pytest.ini
+    
+    * Added several folders for CI routines
+    
+    * Renamed output image
+    
+    * Fixed docker build + corresponding updates
+    
+    * Delete poetry.lock
+    
+    Due to error in the pipeline
+    
+    * Muted lint pipeline step. Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    * Clean up sol-auto artifacts
+    
+    * verbose to poetry install
+    
+    * Uncommented Lint pipeline step
+    
+    * Fixed Dockerfile
+    
+    * Updated README.md
+    
+    * Update README.md
+    
+    * Removed poetry.lock, due to pipeline problem
+    
+    * Freeze playwright version because of new release has a conflict with gclib version of the source image
+
+[33mcommit ea89f6c89c41be13fa1aea4acccaccf7ea2fa649[m
+Author: hpemykolalitynskyi <118815673+hpemykolalitynskyi@users.noreply.github.com>
+Date:   Sun Feb 19 06:31:44 2023 +0200
+
+    [GLCP-38102] Move greenfield tests from sol-auto to auto-activate-sm-workflows repo (#2)
+    
+    * Add files via upload
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Init commit
+    
+    * Added scripts (for poetry only)
+    
+    * Fixed imports
+    
+    * Fixed failed test + pytest.ini
+    
+    * Added several folders for CI routines
+    
+    * Renamed output image
+    
+    * Fixed docker build + corresponding updates
+    
+    * Delete poetry.lock
+    
+    Due to error in the pipeline
+    
+    * Muted lint pipeline step. Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Debugging
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    * Clean up sol-auto artifacts
+    
+    * verbose to poetry install
+    
+    * Revert "verbose to poetry install"
+    
+    This reverts commit 56e6414fab6f245d1627c0a4a71445888b34a1ec.
+    
+    * Revert "Clean up sol-auto artifacts"
+    
+    This reverts commit 7002de22433de1c34c6e91a538118d777d91d115.
+    
+    * Revert "Update README.md"
+    
+    This reverts commit 1d4a2441f09e228027c68e01dedcfe3d47c4f7a6.
+    
+    * Revert "Update README.md"
+    
+    This reverts commit e40383e56161755f4cf65c3713e677402b702844.
+    
+    * Revert "Debugging"
+    
+    This reverts commit 0852dd0359349817305d5a38ad02b4bafc4cee4b.
+    
+    * Revert "Debugging"
+    
+    This reverts commit 8856594c35342f783e56699864e3751d0b7f2f6d.
+    
+    * Revert "Debugging"
+    
+    This reverts commit 8e07e258868a4170d1e4d077a0387d27c7ad671e.
+    
+    * Revert "Muted lint pipeline step. Debugging"
+    
+    This reverts commit fee2cc2a98a50ced73551c26d279990bf69ecec7.
+    
+    * Revert "Delete poetry.lock"
+    
+    This reverts commit 603be3baf194831e2612af1c72cca1a430a65bdb.
+    
+    * Revert "Fixed docker build + corresponding updates"
+    
+    This reverts commit 54d27a335fc873a518b2487733df326378193fec.
+    
+    * Revert "Renamed output image"
+    
+    This reverts commit 7aea96c69c7b662c4e695a2b20d917886e78d06a.
+    
+    * Revert "Added several folders for CI routines"
+    
+    This reverts commit da295fcd67ddf782f84de1b91af24f58e8ca0630.
+
+[33mcommit c4f71c10b99a28844ab940b8802820335ec631a9[m
+Author: kuldipshpe <105338662+kuldipshpe@users.noreply.github.com>
+Date:   Mon Feb 6 17:13:55 2023 -0800
+
+    Initial commit

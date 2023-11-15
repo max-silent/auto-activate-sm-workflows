@@ -1,0 +1,24 @@
+{
+    "payload": [
+        {
+            "appid": "800c9b1f-6167-4801-ba96-6f3ee54d2c73",
+            "stages": [
+                {
+                    "stagename": "postdeployment",
+                    "payload": [
+                        {
+                            "filename": "automation/auto-activate-sm-workflows-multiple-job.yaml"
+                        }
+                    ]
+                }
+            ],
+            "timeout": 7200,
+            "Version": "${version}"
+        }
+    ],
+    "configmap": {
+        "name": "auto-activate-sm-workflows",
+        "infra": ["clusterinfo"]
+    },
+    "multi-region": "supported"
+}

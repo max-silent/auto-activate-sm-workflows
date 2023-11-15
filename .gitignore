@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files / caches
+**/__pycache__/
+**/.pytest_cache/
+*.py[cod]
+*$py.class
+.idea
+**user_creds.json
+
+# Distribution / packaging
+var/
+wheels/
+tmp/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Credentials
+**/user_creds.json

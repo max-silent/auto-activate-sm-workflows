@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+  test-env:
+    build:
+      args:
+        JFROG_USERNAME: $JFROG_USERNAME
+        JFROG_PASSWORD: $JFROG_PASSWORD
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./:/repo
+      - ./results:/tmp/results
+      - ./logs:/tmp/logs
+    container_name: test-env
+    entrypoint:
+      - /bin/bash
+      - -l
+      - -c
+    command:
+      - tail -f /dev/null
+
+  allure:
+    image: "frankescobar/allure-docker-service"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: 1
+      KEEP_HISTORY: 1
+    ports:
+      - "5050:5050"
+    volumes:
+      - ./results:/app/allure-results
+
+  allure-ui:
+    image: "frankescobar/allure-docker-service-ui"
+    environment:
+      ALLURE_DOCKER_PUBLIC_API_URL: "http://localhost:5050"
+      ALLURE_DOCKER_PUBLIC_API_URL_PREFIX: ""
+    ports:
+      - "5252:5252"

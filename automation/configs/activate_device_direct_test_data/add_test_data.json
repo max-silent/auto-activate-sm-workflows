@@ -1,0 +1,90 @@
+{
+  "iap_fw_prov_positive":{
+        "X-Status-Code": "success",
+        "response_code": 200,
+        "X-Mode": "IAP"
+    },
+
+  "iap_provision_no_rule": {
+      "X-Status-Code": "fail-prov-no-rule",
+      "response_code": 200,
+      "X-Mode": "IAP"
+   },
+
+  "st_com_prov_positive": {
+        "X-Status-Code": "success",
+        "response_code": 200,
+        "X-Mode_Comp": "Compute",
+        "X-Mode_Stor": "STORAGE"
+    },
+
+  "storage_negative": {
+          "X-Status-Code": "fail-prov-no-rule",
+          "response_code": 200
+      },
+
+    "compute_negative": {
+          "X-Status-Code": "fail-prov-no-rule",
+          "response_code": 412
+      },
+    "compute_provision_no_device": {
+        "X-Status-Code": "fail-prov-no-device",
+        "message": "The device was not found.",
+        "response_code": 404
+    },
+    "compute_provision_no_rule": {
+        "X-Status-Code": "fail-prov-no-rule",
+        "X-Mode": "COMPUTE",
+        "message": "The device has not been assigned to a region in HPE Central.",
+        "response_code": 412
+      },
+    "compute_provision_no_serial": {
+        "X-Status-Code": "fail-no-serial",
+        "message": "The serial number was missing or malformed.",
+        "response_code": 400
+      },
+      "compute_provision_no_part": {
+        "X-Status-Code": "fail-no-part",
+        "message": "The product id was missing or malformed.",
+        "response_code": 400
+      },
+    "switch_provision_success": {
+        "X-Status-Code": "success",
+        "response_code": 200,
+        "X-Mode": "SWITCH"
+    },
+    "switch_provision_no_rule": {
+        "X-Status-Code": "fail-prov-no-rule",
+        "response_code": 200,
+        "X-Mode": "SWITCH"
+      },
+    "switch_provision_no_device": {
+        "X-Status-Code": "fail-prov-no-device",
+        "response_code": 200
+    },
+    "switch_firmware_response": {
+        "X-Status-Code": "success",
+        "response_code": 200,
+        "X-Mode": "SWITCH"
+    },
+  "controller_provision_success": {
+        "X-Status-Code": "success",
+        "response_code": 200
+    },
+    "controller_provision_no_rule": {
+        "X-Status-Code": "fail-prov-no-rule",
+        "response_code": 200
+    },
+  "controller_firmware_response": {
+        "X-Status-Code": "success",
+        "response_code": 200,
+        "X-Mode": "CONTROLLER"
+    },
+    "est_provision_success": {
+        "X-Status-Code": "success",
+        "response_code": 200,
+        "estUrl": "https://est.arubanetworks.com",
+        "X-Authenticated": "authenticated",
+        "success": "authenticated"
+    }
+}

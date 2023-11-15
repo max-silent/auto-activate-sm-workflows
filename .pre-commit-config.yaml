@@ -1,0 +1,7 @@
+repos:
+  - repo: https://github.com/4Catalyzer/fourmat
+    rev: v0.11.1  # or specify a version
+    hooks:
+      - id: fourmat
+        verbose: true
+        log_file: ./tmp/pre-commit.log

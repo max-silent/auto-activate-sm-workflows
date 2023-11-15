@@ -1,0 +1,61 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: auto-activate-sm-workflows-test
+  namespace: ccs-systemtest
+  labels:
+    appid: ${appid}
+    version: ${version}
+spec:
+  completions: 7
+  parallelism: 7
+  completionMode: Indexed
+  backoffLimit: 0
+  activeDeadlineSeconds: 7200
+  template:
+    metadata:
+      labels:
+        name: auto-activate-sm-workflows-test
+        version: ${version}
+        appid: ${appid}
+      annotations:
+        sidecar.istio.io/inject: "false"
+    spec:
+      initContainers:
+        - name: auto-activate-sm-workflows-input
+          image: quay.io/ccsportal/auto-activate-sm-workflows:${version}
+          command:
+            - "bash"
+            - "-c"
+            - |
+              items=(test_container_1 test_container_2 test_container_3 test_container_4 test_container_5 test_container_6 test_container_7)
+              echo $${items[$$JOB_COMPLETION_INDEX]} > /input/data.txt
+          volumeMounts:
+            - name: input
+              mountPath: /input
+      containers:
+        - name: auto-activate-sm-workflows-test
+          image: quay.io/ccsportal/auto-activate-sm-workflows:${version}
+          command: ["/opt/ccs/run-st.sh"]
+          env:
+          - name: POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+          - mountPath: /input
+            name: input
+          - name: config-volume
+            mountPath: /configmap/data
+      volumes:
+        - name: input
+          emptyDir: { }
+        - name: config-volume
+          configMap:
+            name: auto-activate-sm-workflows
+      restartPolicy: Never
+      imagePullSecrets:
+        - name: quay.io
+      serviceAccount: systemtest-service-account
+      serviceAccountName: systemtest-service-account
