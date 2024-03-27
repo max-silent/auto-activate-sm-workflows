@@ -2,7 +2,7 @@
   "API": {
     "url": "https://testrail.glcp.hpedev.net",
     "user": "testrail-automation@hpe.com",
-    "password": "jpGM7/MuVysCElHiofUc-egRfPHRgW1jUpvUhS4Ns"
+    "password": ""
   },
   "DETAILS": {
     "project_name": "GLCP",
